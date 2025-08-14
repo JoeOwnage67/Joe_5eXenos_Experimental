@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!-- Bodies Base-->
+	<GeneDef Name="Joe_BodyBase" Abstract="True">
+		<displayCategory>Joe_Bodies_Category</displayCategory>
+		<exclusionTags>
+			<li>Bodies</li>
+			<li>Body</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<!-- Fur Body Base -->
+	<GeneDef  Name="Joe_FurBodyBase" ParentName="Joe_BodyBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>430</displayOrderInCategory>
+		<skinIsHairColor>true</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>	 	
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>	
+	</GeneDef>
+
+</Defs>

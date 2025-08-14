@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<GeneDef MayRequire="redmattis.bigsmall.core">
+		<defName>Joe_CannotWearHats_Gene</defName>
+		<displayCategory>Miscellaneous</displayCategory>
+		<label>cannot wear headgear</label>
+		<description>Carriers of this gene have a massive head and cannot wear any type of headgear.</description>
+		<iconPath>UI/Icons/Genes/Joe_CannotWearHats_Gene</iconPath>
+		<biostatMet>0</biostatMet>		
+		<modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<apparelRestrictions>
+					<bodyPartGroups>
+						<blacklist>
+							<li>FullHead</li>
+							<li>UpperHead</li>						
+						</blacklist>
+					</bodyPartGroups>
+				</apparelRestrictions>
+			</li>			
+		</modExtensions>
+	</GeneDef>
+
+
+</Defs>

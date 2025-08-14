@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="Sabrael.FRBELoxo">Compatibility/Sabrael.FRBELoxo</li>
+		<li IfModActive="Sabrael.FRBEGnolls">Compatibility/Sabrael.FRBEGnolls</li>
+		<li IfModActive="redmattis.bigsmall.core">Compatibility/redmattis.bigsmall.core</li>
+		<li IfModActive="RedMattis.BetterPrerequisites">Compatibility/RedMattis.BetterPrerequisites</li>
+		<li IfModActive="sarg.alphagenes">Compatibility/sarg.alphagenes</li>		
+		<li IfModActive="RedMattis.Undead">Compatibility/RedMattis.Undead</li>
+		<li IfModActive="nals.facialanimation">Compatibility/nals.facialanimation</li>
+	</v1.6>
+</loadFolders>

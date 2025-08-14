@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Shifter_Head_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/ShifterHead</texPath>
+	  	<raceName>Shifter</raceName>
+	  	<shader>Map/CutoutComplex</shader>
+		<!--<shader>Map/CutoutSkin</shader>-->
+	  	<modExtensions>
+			<li Class="FacialAnimationGeneticHeads.FARequiredGenes">
+				<requiredGenes>
+					<li>Joe_ShifterHead_Gene</li>
+				</requiredGenes>
+			</li>
+		</modExtensions>
+  	</FacialAnimation.HeadTypeDef>
+  
+  <!--<FacialAnimation.HeadTypeDef>
+	  <defName>Ratkin_Head_Su</defName>
+	  <texPath>Things/Pawn/Ratkin/Heads_Blank/Ratkinhead</texPath>
+	  <raceName>Ratkin_Su</raceName>
+	  <shader>Map/CutoutSkin</shader>
+  </FacialAnimation.HeadTypeDef>-->
+</Defs>
