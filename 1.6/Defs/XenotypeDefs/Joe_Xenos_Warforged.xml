@@ -122,7 +122,7 @@
 
 	<!-- Warforged Xenotype -->
 	<XenotypeDef>
-		<defName>Joe_Warforged</defName>
+		<defName>Joe_Warforged_Xeno</defName>
 		<label>warforged</label>
         <description>Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond the war. A warforged can be a steadfast ally, a cold-hearted killing machine, or a visionary in search of purpose and meaning.</description>
 		<descriptionShort>Warforged are fully sentient soldiers built from a blend of organic and inorganic materials.</descriptionShort>

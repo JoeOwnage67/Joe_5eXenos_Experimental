@@ -1,45 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs> 
-<!-- Dragonborn 
-	<XenotypeDef>
-		<defName>Joe_Dragonborn</defName>
-		<label>dragonborn</label>
-		<description>The dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.</description>
-		<descriptionShort>Originally shaped by the dragons themselves, Dragonborn combine the best attributes of humanoids and dragons.</descriptionShort>
-		<iconPath>UI/Icons/Xenotypes/Dragonborn</iconPath>
-		<inheritable>true</inheritable>
-		<genes>
-			<li>BTEMy_DraconicNose</li> 
-			<li>BTEMy_DraconicTail</li> 
-			<li>BTEMy_AvariceInstinct</li> 
-			<li MayRequire="biotexpans.mammalia">BTEMa_SharpClaws</li>   				    				
-			<li MayRequire="sarg.alphagenes">AG_ScalyBody</li>			
-			<li MayRequire="sarg.alphagenes">AG_AnimusEars</li>
-			<li MayRequire="sarg.alphagenes">AG_Skin_DeeperRed</li>
-			<li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>
-			<li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>
-			<li MayRequire="sarg.alphagenes">AG_EggLaying</li>
-			<li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor</li>									
-			<li>Hair_BaldOnly</li>
-			<li>Skin_DeepRed</li>		
-			<li>Skin_InkBlack</li>
-			<li>Skin_PaleRed</li>					
-			<li>Body_Standard</li>
-			<li>Body_Hulk</li>
-			<li>Beard_NoBeardOnly</li>
-			<li>FireResistant</li>
-			<li>MeleeDamage_Strong</li>
-			<li>WoundHealing_Fast</li>
-			<li>Sleepy</li>
-			<li>Robust</li>
-    		<li>Unstoppable</li>						
-			<li>Aggression_Aggressive</li>	 			
-			<li>MinTemp_SmallIncrease</li>
-			<li>AptitudeTerrible_Animals</li>
-			<li>AptitudeTerrible_Plants</li>
-			<li>AptitudeTerrible_Intellectual</li>				
-			<li>FireSpew</li>
-			<li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>
-		</genes>
-	</XenotypeDef>-->
+
+		<!-- Dragonborn Head Type Def -->
+		<HeadTypeDef ParentName="AverageBase">
+				<defName>Joe_DragonHead_Head</defName>
+				<graphicPath>Things/Pawn/Humanlike/Heads/DragonHead/DragonHead/</graphicPath>
+				<gender>None</gender>
+				<requiredGenes>
+					<li>Joe_DragonHead_Gene</li>
+				</requiredGenes>
+		</HeadTypeDef>
+
+		<!-- Dragonborn Head Gene Def -->
+		<GeneDef ParentName="GeneJawBase">
+			<defName>Joe_DragonHead_Gene</defName>
+			<label>dragonborn head</label>
+			<description>Carriers of this gene have a head featuring dragon-like features. Their sharp teeth and enhanced senses make them formidable hunters.</description>
+			<iconPath>UI/Icons/Genes/Joe_DragonHead_Gene</iconPath>		
+			<displayOrderInCategory>9802</displayOrderInCategory>
+			<biostatMet>2</biostatMet>	
+			<skinIsHairColor>true</skinIsHairColor>	
+			<capMods>
+				<li>
+					<capacity>Manipulation</capacity>
+					<postFactor>1.1</postFactor>
+				</li>
+			</capMods>
+			<statOffsets>
+				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+				<ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
+				<MiningSpeed>0.1</MiningSpeed>
+			</statOffsets>
+			<hairTagFilter>
+				<whitelist>true</whitelist>
+				<tags>
+					<li>Bald</li>
+				</tags>
+			</hairTagFilter>
+			<beardTagFilter>
+				<whitelist>true</whitelist>
+				<tags>
+					<li>NoBeard</li>
+				</tags>
+			</beardTagFilter>
+		</GeneDef>	
+
+		<!-- Dragonborn XenotypeDef -->
+		<XenotypeDef> 
+			<defName>Joe_Dragonborn_Xeno</defName>
+			<label>dragonborn</label>
+			<description>The dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. Some dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.</description>
+			<descriptionShort>Originally shaped by the dragons themselves, Dragonborn combine the best attributes of humanoids and dragons.</descriptionShort>
+			<iconPath>UI/Icons/Xenotypes/Dragonborn</iconPath>
+			<inheritable>true</inheritable>
+			<genes>
+				<li>Joe_DragonHead_Gene</li>			  				    				
+				<li MayRequire="sarg.alphagenes">AG_ScalyBody</li>
+				<li MayRequire="sarg.alphagenes">AG_Skin_DeeperRed</li>
+				<li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>
+				<li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>
+				<li MayRequire="sarg.alphagenes">AG_EggLaying</li>
+				<li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor</li>	
+				<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>								
+				<li>Hair_BaldOnly</li>
+				<li>Skin_DeepRed</li>		
+				<li>Skin_InkBlack</li>
+				<li>Skin_PaleRed</li>
+				<li>Body_Hulk</li>
+				<li>Beard_NoBeardOnly</li>
+				<li>FireResistant</li>
+				<li>MeleeDamage_Strong</li>
+				<li>WoundHealing_Fast</li>
+				<li>Sleepy</li>
+				<li>Robust</li>
+				<li>Unstoppable</li>						
+				<li>Aggression_Aggressive</li>	 			
+				<li>MinTemp_SmallIncrease</li>
+				<li>AptitudeTerrible_Animals</li>
+				<li>AptitudeTerrible_Plants</li>
+				<li>AptitudeTerrible_Intellectual</li>				
+				<li>FireSpew</li>
+			</genes>
+		</XenotypeDef>
+
 </Defs>

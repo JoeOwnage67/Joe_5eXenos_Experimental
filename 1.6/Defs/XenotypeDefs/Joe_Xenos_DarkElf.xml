@@ -4,7 +4,7 @@
 
 <!-- Dark Elf -->
     <XenotypeDef>
-		<defName>Joe_DarkElf</defName>
+		<defName>Joe_DarkElf_Xeno</defName>
 		<label>dark elf</label>
 		<description>Descended from an earlier subrace of dark-skinned elves, the Dark Elves or Drow were banished from the surface world for following the goddess Lolth down the path to evil and corruption. Now they have built their own civilization in the depths of the Underdark, patterned after the Way of Lolth.</description>
 		<descriptionShort>Dark Elves are a subrace of Elf long ago banished from the surface world for worship of the evil and corrupt goddess Lolth.</descriptionShort>

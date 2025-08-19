@@ -38,15 +38,13 @@
 
 <!-- Tabaxi Xenotype -->
 	<XenotypeDef>
-		<defName>Joe_Tabaxi</defName>
+		<defName>Joe_Tabaxi_Xeno</defName>
 		<label>tabaxi</label>
 		<description>Hailing from a strange and distant land, wandering tabaxi are catlike humanoids driven by curiosity to collect interesting artifacts, gather tales and stories, and lay eyes on all the world's wonders. Ultimate travelers, the inquisitive tabaxi rarely stay in one place for long. Their innate nature pushes them to leave no secrets uncovered, no treasures or legends lost.</description>
 		<descriptionShort>Tabaxi are inquisitive, catlike humanoids known for their curiosity and their restless nature.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Tabaxi</iconPath>
 		<inheritable>true</inheritable>
-		<genes>				
-			<li MayRequire="biotexpans.mammalia">BTEMa_SharpClaws</li>				
-			<li MayRequire="biotexpans.mammalia">BTEMa_SensitiveWhiskers</li>			
+		<genes>							
 			<li>Joe_FelyneWhiskers_Gene</li>
 			<li MayRequire="RedMattis.BigSmall.Core">DwarfFrame</li>
 			<li>Beard_NoBeardOnly</li>

@@ -10,14 +10,19 @@
 			<value>
 				<xenotypeSet>
 					<xenotypeChances>
-						<Joe_WoodElf>0.1</Joe_WoodElf>
-						<Joe_DarkElf>0.1</Joe_DarkElf>
-						<Joe_HillDwarf>0.1</Joe_HillDwarf>
-						<Joe_MountainDwarf>0.1</Joe_MountainDwarf>
-						<Joe_Orc>0.1</Joe_Orc>
-						<Joe_Warforged>0.1</Joe_Warforged>
-						<Joe_TorduneLoxo>0.05</Joe_TorduneLoxo>
-					</xenotypeChances>				
+						<Joe_DarkElf_Xeno>0.1</Joe_DarkElf_Xeno>
+						<Joe_Dragonborn_Xeno>0.1</Joe_Dragonborn_Xeno>
+						<Joe_HillDwarf_Xeno>0.1</Joe_HillDwarf_Xeno>
+						<Joe_Loxodon_Xeno>0.1</Joe_Loxodon_Xeno>
+						<Joe_MountainDwarf_Xeno>0.1</Joe_MountainDwarf_Xeno>
+						<Joe_Orc_Xeno>0.1</Joe_Orc_Xeno>
+						<Joe_Shifter_Xeno>0.1</Joe_Shifter_Xeno>
+						<Joe_Tabaxi_Xeno>0.1</Joe_Tabaxi_Xeno>
+						<Joe_TorduneLoxo_Xeno>0.05</Joe_TorduneLoxo_Xeno>
+						<Joe_Undead_Xeno>0.1</Joe_Undead_Xeno>
+						<Joe_Warforged_Xeno>0.1</Joe_Warforged_Xeno>
+						<Joe_WoodElf_Xeno>0.1</Joe_WoodElf_Xeno>							
+					</xenotypeChances>
 				</xenotypeSet>
 			</value>
 		</nomatch>
@@ -28,13 +33,18 @@
 		<match Class="PatchOperationAdd">
 			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
 			<value>
-				<Joe_WoodElf>0.1</Joe_WoodElf>
-				<Joe_DarkElf>0.1</Joe_DarkElf>
-				<Joe_HillDwarf>0.1</Joe_HillDwarf>
-				<Joe_MountainDwarf>0.1</Joe_MountainDwarf>
-				<Joe_Orc>0.1</Joe_Orc>
-				<Joe_Warforged>0.1</Joe_Warforged>
-				<Joe_TorduneLoxo>0.05</Joe_TorduneLoxo>			
+				<Joe_DarkElf_Xeno>0.1</Joe_DarkElf_Xeno>
+				<Joe_Dragonborn_Xeno>0.1</Joe_Dragonborn_Xeno>
+				<Joe_HillDwarf_Xeno>0.1</Joe_HillDwarf_Xeno>
+				<Joe_Loxodon_Xeno>0.1</Joe_Loxodon_Xeno>
+				<Joe_MountainDwarf_Xeno>0.1</Joe_MountainDwarf_Xeno>
+				<Joe_Orc_Xeno>0.1</Joe_Orc_Xeno>
+				<Joe_Shifter_Xeno>0.1</Joe_Shifter_Xeno>
+				<Joe_Tabaxi_Xeno>0.1</Joe_Tabaxi_Xeno>
+				<Joe_TorduneLoxo_Xeno>0.05</Joe_TorduneLoxo_Xeno>
+				<Joe_Undead_Xeno>0.1</Joe_Undead_Xeno>
+				<Joe_Warforged_Xeno>0.1</Joe_Warforged_Xeno>
+				<Joe_WoodElf_Xeno>0.1</Joe_WoodElf_Xeno>			
 			</value>
 		</match>
 	</Operation>

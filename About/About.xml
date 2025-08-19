@@ -40,6 +40,16 @@
 			<packageId>RedMattis.BetterPrerequisites</packageId>
 			<displayName>Big and Small - Framework</displayName>
     	</li>
+
+		<li>
+			<packageId>RedMattis.BigSmall.Core</packageId>
+			<displayName>Big and Small - Genes &amp; More</displayName>
+		</li>
+
+		<li>
+			<packageId>sd.fa.geneticheadsframework</packageId>
+			<displayName>Genetic Heads Framework for [NL] Facial Animation</displayName>
+		</li>		
  
 	</modDependencies>
 	<description>5e Xenotypes</description>

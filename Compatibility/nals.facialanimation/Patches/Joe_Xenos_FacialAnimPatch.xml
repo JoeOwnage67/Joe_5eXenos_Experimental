@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>  
+    
+    <!-- Joe_FA_NoMouth gene added to Shifter -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Joe_Shifter_Xeno"]/genes</xpath>
+        <value>
+            <li>Joe_FA_NoMouth</li>
+        </value>                                
+    </Operation>
+    
+    <!-- Joe_FA_NoMouth gene added to Loxodon -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Joe_Loxodon_Xeno"]/genes</xpath>
+        <value>
+            <li>Joe_FA_NoMouth</li>
+        </value>                                
+    </Operation>    
+
+    <!-- Joe_FA_NoMouth gene added to Dragonborn -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Joe_Dragonborn_Xeno"]/genes</xpath>
+        <value>
+            <li>Joe_FA_NoMouth</li>
+        </value>                                
+    </Operation> 
+
+</Patch>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Shifter_Head_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/ShifterHead</texPath>
+	  	<raceName>Shifter</raceName>
+	  	<shader>Map/CutoutComplex</shader>
+		<!--<shader>Map/CutoutSkin</shader>-->	  	
+		<probability>0</probability>
+  	</FacialAnimation.HeadTypeDef>
+
+	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Loxo_Head_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/LoxoHead</texPath>
+	  	<raceName>Loxodon</raceName>
+	  	<shader>Map/CutoutComplex</shader>
+		<!--<shader>Map/CutoutSkin</shader>-->	  	
+		<probability>0</probability>
+  	</FacialAnimation.HeadTypeDef>
+
+	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Dragon_Head_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/DragonHead</texPath>
+	  	<raceName>Dragon</raceName>
+	  	<shader>Map/CutoutComplex</shader>
+		<!--<shader>Map/CutoutSkin</shader>-->	  	
+		<probability>0</probability>
+  	</FacialAnimation.HeadTypeDef>
+
+	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Undead_Head1_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/UndeadHead1</texPath>
+	  	<raceName>Undead</raceName>
+	  	<shader>Map/CutoutComplex</shader>
+		<!--<shader>Map/CutoutSkin</shader>-->	  	
+		<probability>0</probability>
+  	</FacialAnimation.HeadTypeDef>
+
+	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Undead_Head2_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/UndeadHead2</texPath>
+	  	<raceName>Undead</raceName>
+	  	<shader>Map/CutoutComplex</shader>
+		<!--<shader>Map/CutoutSkin</shader>-->	  	
+		<probability>0</probability>
+  	</FacialAnimation.HeadTypeDef>
+
+	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Undead_Head3_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/UndeadHead3</texPath>
+	  	<raceName>Undead</raceName>
+	  	<shader>Map/CutoutComplex</shader>
+		<!--<shader>Map/CutoutSkin</shader>-->	  	
+		<probability>0</probability>
+  	</FacialAnimation.HeadTypeDef>
+
+	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Undead_Head4_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/UndeadHead4</texPath>
+	  	<raceName>Undead</raceName>
+	  	<shader>Map/CutoutComplex</shader>
+		<!--<shader>Map/CutoutSkin</shader>-->	  	
+		<probability>0</probability>
+  	</FacialAnimation.HeadTypeDef>
+
+</Defs>

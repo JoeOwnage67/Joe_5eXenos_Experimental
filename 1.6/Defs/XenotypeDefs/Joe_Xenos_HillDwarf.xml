@@ -4,7 +4,7 @@
 
 <!-- Hill Dwarf -->
 	<XenotypeDef>
-		<defName>Joe_HillDwarf</defName>
+		<defName>Joe_HillDwarf_Xeno</defName>
 		<label>hill dwarf</label>
 		<description>Hill dwarves are an aloof, confident and sometimes proud subrace of Dwarf, known to be particularly stalwart warriors and shrewd traders. Stout, tough individuals, hill dwarves are often less agile than other dwarves. Hill Dwarves are known to keep beards, which are carefully groomed and grown to great lengths.</description>
 		<descriptionShort>Hill Dwarves are a lowland subrace of Dwarf known for their robustness, combat prowess, and ability to strike a bargain.</descriptionShort>

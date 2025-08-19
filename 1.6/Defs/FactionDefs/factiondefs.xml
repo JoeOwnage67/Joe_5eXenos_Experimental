@@ -15,7 +15,7 @@
         <leaderTitle>underlord</leaderTitle>  	
 	    <xenotypeSet Inherit="False">
             <xenotypeChances>
-                <Joe_HillDwarf>100</Joe_HillDwarf>
+                <Joe_HillDwarf_Xeno>100</Joe_HillDwarf_Xeno>
             </xenotypeChances>
         </xenotypeSet>
         <permanentEnemyToEveryoneExceptPlayer>false</permanentEnemyToEveryoneExceptPlayer>
@@ -34,7 +34,7 @@
         <leaderTitle>underlord</leaderTitle> 
 	    <xenotypeSet Inherit="False">
             <xenotypeChances>
-                <Joe_MountainDwarf>100</Joe_MountainDwarf>
+                <Joe_MountainDwarf_Xeno>100</Joe_MountainDwarf_Xeno>
             </xenotypeChances>
         </xenotypeSet>
         <permanentEnemyToEveryoneExceptPlayer>false</permanentEnemyToEveryoneExceptPlayer>
@@ -55,7 +55,7 @@
         <leaderTitle>elder</leaderTitle>
 	    <xenotypeSet Inherit="False">
             <xenotypeChances>
-                <Joe_WoodElf>100</Joe_WoodElf>
+                <Joe_WoodElf_Xeno>100</Joe_WoodElf_Xeno>
             </xenotypeChances>
         </xenotypeSet>
         <permanentEnemyToEveryoneExceptPlayer>false</permanentEnemyToEveryoneExceptPlayer>        
@@ -73,7 +73,7 @@
         <leaderTitle>dark lord</leaderTitle>
 	    <xenotypeSet Inherit="False">
             <xenotypeChances>
-                <Joe_DarkElf>100</Joe_DarkElf>
+                <Joe_DarkElf_Xeno>100</Joe_DarkElf_Xeno>
             </xenotypeChances>
         </xenotypeSet>
         <permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>        
@@ -102,7 +102,7 @@
 		<pawnsPlural>savage orcs</pawnsPlural>		
 		<xenotypeSet Inherit="False">
             <xenotypeChances>
-                <Joe_Orc>100</Joe_Orc>
+                <Joe_Orc_Xeno>100</Joe_Orc_Xeno>
             </xenotypeChances>
         </xenotypeSet>
 	</FactionDef>

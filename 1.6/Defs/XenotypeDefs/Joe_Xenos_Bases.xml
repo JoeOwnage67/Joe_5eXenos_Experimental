@@ -11,8 +11,10 @@
 		</exclusionTags>
 	</GeneDef>
 
-	<!-- Fur Body Base -->
-	<GeneDef  Name="Joe_FurBodyBase" ParentName="Joe_BodyBase" Abstract="True">
+
+
+	<!-- Fur Body Base (body is hair colour) -->
+	<GeneDef Name="Joe_FurBodyBase" ParentName="Joe_BodyBase" Abstract="True">
 		<biostatCpx>0</biostatCpx>
 		<selectionWeight>0</selectionWeight>
 		<displayOrderInCategory>430</displayOrderInCategory>
@@ -24,10 +26,42 @@
 				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
 				<baseLayer>5</baseLayer>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>	
+	</GeneDef>
+
+	<!-- Skin Body Base (body is skin colour) -->
+	<GeneDef Name="Joe_SkinBodyBase" ParentName="Joe_BodyBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<selectionWeight>0</selectionWeight>
+		<displayOrderInCategory>430</displayOrderInCategory>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>	 	
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<colorType>Skin</colorType>
 				<parentTagDef>Body</parentTagDef>
 			</li>
 		</renderNodeProperties>	
+	</GeneDef>
+
+	<!-- Tusks/Whiskers Parent -->
+	<GeneDef Name="Joe_TuskGeneBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>Headbone</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>110</displayOrderInCategory>
+		<exclusionTags>
+			<li>Tusk</li>
+			<li>Tusks</li>
+		</exclusionTags>
+		<randomChosen>true</randomChosen>
 	</GeneDef>
 
 </Defs>
