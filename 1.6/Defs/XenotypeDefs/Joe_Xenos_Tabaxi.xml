@@ -52,7 +52,12 @@
 			<li>Ears_Cat</li>
 			<li>Tail_Furry</li>
 			<li>Body_Thin</li>
-			<li>Furskin</li>							
+			<li>Furskin</li>
+			<li>Hair_DarkReddish</li>
+			<li>Hair_DarkBrown</li>
+			<li>Hair_ReddishBrown</li>
+			<li>Hair_Blonde</li>
+			<li>Hair_LightOrange</li>
 			<li>Learning_Fast</li><!-- Curious -->
 			<li>Fertile</li>
 			<li>Libido_High</li>

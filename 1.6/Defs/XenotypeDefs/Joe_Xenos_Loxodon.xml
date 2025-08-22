@@ -190,7 +190,7 @@
 			<li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor</li>
             <li MayRequire="redmattis.bigsmall.core">BS_SlowAging</li>  
 			<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>
-			<li MayRequire="RedMattis.BigSmall.Core">Joe_CannotWearHats_Gene</li>
+			<!--<li MayRequire="RedMattis.BigSmall.Core">Joe_CannotWearHats_Gene</li>-->
 		    <li>Joe_LoxoHead_Gene</li>
 			<li>Joe_LoxoEars_Gene</li>
 			<li>Joe_LoxoTusks_Gene</li>

@@ -50,12 +50,12 @@
             <li>Joe_UndeadHead3</li>
             <li>Joe_UndeadHead4</li>
         </forcedHeadTypes>		
-        <!--<beardTagFilter>
+        <beardTagFilter>
             <whitelist>true</whitelist>
             <tags>
                 <li>NoBeard</li>
             </tags>
-        </beardTagFilter>-->
+        </beardTagFilter>
         <hairTagFilter>
             <whitelist>true</whitelist>
             <tags>
@@ -72,7 +72,7 @@
             <Male>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Male</Male>
             <Male>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Male</Male>
             <Female>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Female</Female>
-            <Thin>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Thin>
+            <Thin>Things/Pawn/Humanlike/Bodies/ZombieBody/Naked_Thin</Thin>
             <Thin>Things/Pawn/Humanlike/Bodies/SkeletonBody/Naked_Thin</Thin>            
         </bodyTypeGraphicPaths>  
   </FurDef>

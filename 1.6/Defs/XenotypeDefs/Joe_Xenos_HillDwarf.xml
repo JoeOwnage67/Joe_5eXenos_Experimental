@@ -31,7 +31,11 @@
 	  		<li>AptitudeStrong_Social</li>
 			<li>AptitudePoor_Animals</li>
 	  		<li>AptitudePoor_Plants</li>
-	  		<li>AptitudeRemarkable_Melee</li>   
+	  		<li>AptitudeRemarkable_Melee</li>
+			<li>Skin_Melanin6</li>
+			<li>Skin_Melanin7</li>
+			<li>Skin_Melanin8</li>
+			<li>Skin_Melanin9</li>
 		</genes>
 	</XenotypeDef>
 

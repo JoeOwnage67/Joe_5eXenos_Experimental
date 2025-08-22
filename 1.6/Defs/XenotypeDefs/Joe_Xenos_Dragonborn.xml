@@ -19,7 +19,7 @@
 			<iconPath>UI/Icons/Genes/Joe_DragonHead_Gene</iconPath>		
 			<displayOrderInCategory>9802</displayOrderInCategory>
 			<biostatMet>2</biostatMet>	
-			<skinIsHairColor>true</skinIsHairColor>	
+			<skinIsHairColor>false</skinIsHairColor>	
 			<capMods>
 				<li>
 					<capacity>Manipulation</capacity>

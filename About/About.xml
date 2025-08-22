@@ -9,8 +9,7 @@
     </supportedVersions>
 	<packageId>JoeOwnage.5eXenos</packageId>
 	<incompatibleWith>
-		<li>skylar.fantasyoftherim</li>		
-		<li>Neronix17.ForgottenRealms</li>
+		<li>skylar.fantasyoftherim</li>
 	</incompatibleWith>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
@@ -30,11 +29,16 @@
 	</loadAfter>
 
 	<modDependencies>
-		
+
 		<li>
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
 			<displayName>Biotech</displayName>
     	</li>
+
+		<li>
+			<packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+		</li>
 
 		<li>
 			<packageId>RedMattis.BetterPrerequisites</packageId>
@@ -45,7 +49,7 @@
 			<packageId>RedMattis.BigSmall.Core</packageId>
 			<displayName>Big and Small - Genes &amp; More</displayName>
 		</li>
-
+		
 		<li>
 			<packageId>sd.fa.geneticheadsframework</packageId>
 			<displayName>Genetic Heads Framework for [NL] Facial Animation</displayName>

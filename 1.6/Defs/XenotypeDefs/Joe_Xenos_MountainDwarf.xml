@@ -36,7 +36,11 @@
   			<li>AptitudeStrong_Mining</li>
   			<li>AptitudePoor_Animals</li>
   			<li>AptitudePoor_Plants</li>
-  			<li>AptitudeRemarkable_Crafting</li>    
+  			<li>AptitudeRemarkable_Crafting</li>
+			<li>Skin_Melanin1</li>
+			<li>Skin_Melanin2</li>
+			<li>Skin_Melanin3</li>
+			<li>Skin_Melanin4</li>			
 		</genes>
 	</XenotypeDef>
 </Defs>

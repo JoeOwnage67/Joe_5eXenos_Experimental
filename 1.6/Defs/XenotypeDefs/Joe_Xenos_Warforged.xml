@@ -38,7 +38,7 @@
 		<defName>Joe_WarforgedHead</defName>
 		<label>warforged head</label>
 		<description>The head of a warforged is constructed of both organic and inorganic materials. All warforged have crystalline eyes, a hinged jawline and a prominent brow.</description>
-	    <iconPath>UI/Icons/Genes/Gene_WarFace</iconPath>
+	    <iconPath>UI/Icons/Genes/Joe_WarFace_Gene</iconPath>
 		<forcedHeadTypes>
 	    	<li>Joe_Warhead1</li>
 	      	<li>Joe_Warhead2</li>
@@ -69,13 +69,7 @@
 		    <tags>
 		    	<li>NoBeard</li>
 		    </tags>
-		</beardTagFilter>		
-		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
-		    	<backgroundPathEndogenes>UI/Genes/Endogene</backgroundPathEndogenes>
-		        <backgroundPathXenogenes>UI/Genes/Xenogene</backgroundPathXenogenes>				
-		    </li>
-		</modExtensions>
+		</beardTagFilter>
 	</GeneDef>
 
 <!-- Warforged Fur -->
@@ -89,7 +83,7 @@
   	</FurDef>
 
 <!-- WarforgedBody -->
-	<GeneDef ParentName="GeneBodyBase">
+	<GeneDef ParentName="Joe_SkinBodyBase">
 		<defName>Joe_WarforgedBody</defName>
 		<label>warforged body</label>
 		<labelShortAdj>warforged body</labelShortAdj>
@@ -103,6 +97,7 @@
 			<li>
 				<nodeClass>PawnRenderNode_Fur</nodeClass>
 				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<useSkinShader>false</useSkinShader>
 				<baseLayer>5</baseLayer>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<colorType>Skin</colorType>
@@ -110,14 +105,14 @@
 			</li>
 		</renderNodeProperties>
 		<displayOrderInCategory>400</displayOrderInCategory>
-		<iconPath>UI/Icons/Genes/Gene_WarforgedBody</iconPath>
+		<iconPath>UI/Icons/Genes/Joe_WarBody_Gene</iconPath>
 		<skinColorOverride>(102, 102, 105)</skinColorOverride>	
 		<modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
-		    	<backgroundPathEndogenes>UI/Genes/Endogene</backgroundPathEndogenes>
-		        <backgroundPathXenogenes>UI/Genes/Xenogene</backgroundPathXenogenes>				
-		    </li>
-		</modExtensions> 	
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
+                <furHidesBody>true</furHidesBody>
+                <useSkinColorForFur>true</useSkinColorForFur>
+            </li>
+        </modExtensions>	
 	</GeneDef>
 
 	<!-- Warforged Xenotype -->
