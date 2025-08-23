@@ -65,4 +65,24 @@
 		<probability>0</probability>
   	</FacialAnimation.HeadTypeDef>
 
+	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Tabaxi_Head_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/TabaxiHead</texPath>
+	  	<raceName>Tabaxi</raceName>
+	  	<!--<shader>Map/CutoutComplex</shader>-->
+		<!--<shader>Map/CutoutSkin</shader>-->
+		<shader>Map/Cutout</shader>	  	
+		<probability>0</probability>
+  	</FacialAnimation.HeadTypeDef>
+
+	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Warforged_Head_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/WarforgedHead</texPath>
+	  	<raceName>Warforged</raceName>
+	  	<!--<shader>Map/CutoutComplex</shader>-->
+		<!--<shader>Map/CutoutSkin</shader>-->
+		<shader>Map/CutoutComplex</shader>	  	
+		<probability>0</probability>
+  	</FacialAnimation.HeadTypeDef>
+
 </Defs>

@@ -178,45 +178,55 @@
 		<iconPath>UI/Icons/Xenotypes/Shifter</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
-			<li>Joe_ShifterHead_Gene</li>
-			<li>Joe_ShifterSnout_Gene</li>
-			<li>Joe_ShifterEars_Gene</li>
-			<li>Joe_ShifterFur_Gene</li>			
-			<li MayRequire="sarg.alphagenes">AG_EfficientMandibles</li>
-			<li MayRequire="sarg.alphagenes">AG_GrowlingVoice</li>
-			<li>Hair_BaldOnly</li>
-			<li>Tail_Furry</li>
-			<li>Hair_LongOnly</li>
-			<li>Hair_InkBlack</li>
-			<li>Hair_Gray</li>
-			<li>Hair_DarkBlack</li>
-			<li>Hair_MidBlack</li>
-			<li>Hair_DarkReddish</li>
-			<li>Hair_DarkBrown</li>
-			<li>Hair_ReddishBrown</li>
-			<li>Body_Standard</li>
-			<li>Body_Hulk</li>				
-			<li>Beauty_Ugly</li>
-			<li>Beard_NoBeardOnly</li>
-			<li>KillThirst</li>
-			<li>Aggression_Aggressive</li>
-			<li>StrongStomach</li>
-			<li>RobustDigestion</li>				
-			<li>MeleeDamage_Strong</li>
-			<li>Fertile</li>
-			<li>Libido_High</li>
-			<li>DarkVision</li>
-			<li>MoveSpeed_Quick</li>		
-			<li>AptitudeStrong_Animals</li>
-    		<li>AptitudeTerrible_Artistic</li>
-			<li>AptitudePoor_Construction</li>				
-			<li>AnimalWarcall</li>	
-		</genes>
-		<!--<modExtensions>
-			<li Class="BetterPrerequisites.XenotypeExtension">
-				<setRace>Shifter</setRace>
-				<forceRace>true</forceRace>
-			</li>
-    	</modExtensions>-->
+			<!-- bodies -->
+			<li>Body_Standard</li> 												<!-- cpx/met = 0 -->
+			<li>Body_Hulk</li> 													<!-- cpx/met = 0 -->
+			
+			<!-- heads --> 
+			<li>Joe_ShifterHead_Gene</li>										<!-- cpx/met = 0 -->
+
+			<!-- appearance -->			 
+			<li>Joe_ShifterSnout_Gene</li>										<!-- cpx/met = 0 -->
+			<li>Joe_ShifterEars_Gene</li>										<!-- cpx/met = 0 -->
+			<li>Joe_ShifterFur_Gene</li>										<!-- cpx/met = 0 -->
+			<li>Hair_BaldOnly</li>												<!-- cpx/met = 0 -->
+			<li>Beard_NoBeardOnly</li> 											<!-- cpx/met = 0 -->
+			<li>Tail_Furry</li> 												<!-- cpx = 1 met = -1 -->
+			<li>Hair_LongOnly</li> 												<!-- cpx/met = 0 -->
+			<li>Hair_InkBlack</li> 												<!-- cpx/met = 0 -->
+			<li>Hair_Gray</li> 													<!-- cpx/met = 0 -->
+			<li>Hair_DarkBlack</li> 											<!-- cpx/met = 0 -->
+			<li>Hair_MidBlack</li> 												<!-- cpx/met = 0 -->
+			<li>Hair_DarkReddish</li> 											<!-- cpx/met = 0 -->
+			<li>Hair_DarkBrown</li> 											<!-- cpx/met = 0 -->
+			<li>Hair_ReddishBrown</li> 											<!-- cpx/met = 0 -->
+			<li>Beauty_Ugly</li> 												<!-- met = 1 -->
+
+			<!-- buffs -->	
+			<li>StrongStomach</li>												<!-- met = -1 -->
+			<li>MeleeDamage_Strong</li> 										<!-- met = -2 -->
+			<li>DarkVision</li> 												<!-- met = -1 -->
+			<li>MoveSpeed_Quick</li> 											<!-- met = -3 -->
+			<li>AptitudeStrong_Animals</li> 									<!-- cpx = 2 met = -1 -->
+			
+			<!-- debuffs -->
+			<li>KillThirst</li> 												<!-- met = 4 -->
+			<li>Aggression_Aggressive</li> 										<!-- met = 2 -->
+			<li>AptitudeTerrible_Intellectual</li>								<!-- cpx = 1 met = 2 -->
+			
+			<!-- flavour / personality -->
+			<li MayRequire="sarg.alphagenes">AG_GrowlingVoice</li>				<!-- cpx = 0 met = 0 -->
+			<li>Fertile</li> 													<!-- cpx = 0 met = 0 -->
+			<li>Libido_High</li> 												<!-- cpx = 0 met = 0 -->
+			<li>BS_AnimalFriend</li>											<!-- cpx = 1 met = -1 -->
+			
+			<!-- abilities -->
+			<li>AnimalWarcall</li> 												<!-- cpx = 1 met = -3 -->
+
+																				<!-- totals -->
+																				<!-- met (-6 to +6) = -13+9=-4 -->
+																				<!-- cpx (6 to 12) =  6 -->
+																				<!-- arc = 0 --> 
+		</genes>		
 	</XenotypeDef>
 </Defs>

@@ -3,7 +3,17 @@
 	
 <!-- Warforged Head types -->
 
-	<!-- Warhead1 -->
+	<!-- WarforgedHead -->
+	<HeadTypeDef ParentName="AverageBase">
+	    	<defName>Joe_WarforgedHead_Head</defName>
+	      	<graphicPath>Things/Pawn/Humanlike/Heads/WarforgedHead/WarforgedHead</graphicPath>
+	      	<gender>None</gender>
+	      	<requiredGenes>
+	        	<li>Joe_WarforgedHead_Gene</li>
+	      	</requiredGenes>
+	</HeadTypeDef>
+
+	<!-- Warhead1 
 	<HeadTypeDef ParentName="AverageBase">
 	    	<defName>Joe_Warhead1</defName>
 	      	<graphicPath>Things/Pawn/Humanlike/Heads/InfinityHead/Infinity_Head1</graphicPath>
@@ -11,9 +21,9 @@
 	      	<requiredGenes>
 	        	<li>Joe_WarforgedHead</li>
 	      	</requiredGenes>
-	</HeadTypeDef>
+	</HeadTypeDef>-->
 
-	<!-- Warhead2 -->
+	<!-- Warhead2 
 	<HeadTypeDef ParentName="AverageBase">
 	    	<defName>Joe_Warhead2</defName>
 	      	<graphicPath>Things/Pawn/Humanlike/Heads/InfinityHead/Infinity_Head2</graphicPath>
@@ -21,9 +31,9 @@
 	      	<requiredGenes>
 	        	<li>Joe_WarforgedHead</li>
 	      	</requiredGenes>
-	</HeadTypeDef>
+	</HeadTypeDef>-->
 
-	<!-- Warhead3 -->
+	<!-- Warhead3 
 	<HeadTypeDef ParentName="AverageBase">
 	    	<defName>Joe_Warhead3</defName>
 	      	<graphicPath>Things/Pawn/Humanlike/Heads/InfinityHead/Infinity_Head3</graphicPath>
@@ -31,18 +41,21 @@
 	      	<requiredGenes>
 	        	<li>Joe_WarforgedHead</li>
 	      	</requiredGenes>
-	</HeadTypeDef>
+	</HeadTypeDef>-->
 
 	<!-- Joe_WarforgedHead Gene -->
 	<GeneDef ParentName="GeneJawBase">
-		<defName>Joe_WarforgedHead</defName>
+		<defName>Joe_WarforgedHead_Gene</defName>
 		<label>warforged head</label>
 		<description>The head of a warforged is constructed of both organic and inorganic materials. All warforged have crystalline eyes, a hinged jawline and a prominent brow.</description>
 	    <iconPath>UI/Icons/Genes/Joe_WarFace_Gene</iconPath>
 		<forcedHeadTypes>
-	    	<li>Joe_Warhead1</li>
+	    	<!--
+			<li>Joe_Warhead1</li>
 	      	<li>Joe_Warhead2</li>
 			<li>Joe_Warhead3</li>
+			-->
+			<li>Joe_WarforgedHead_Head</li>
 	    </forcedHeadTypes>
 		<displayOrderInCategory>9802</displayOrderInCategory>
 		<biostatMet>2</biostatMet>
@@ -70,11 +83,36 @@
 		    	<li>NoBeard</li>
 		    </tags>
 		</beardTagFilter>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/Heads/WarforgedHead/WarforgedHead</texPath>
+				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<colorType>Skin</colorType>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<parentTagDef>Head</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<visibleFacing>
+					<li>East</li>
+					<li>South</li>
+					<li>West</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>50</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	</GeneDef>
 
 <!-- Warforged Fur -->
 	<FurDef>
-		<defName>Joe_WarforgedFur</defName>
+		<defName>Joe_WarforgedBody_Fur</defName>
 		<noGraphic>true</noGraphic>
 		<bodyTypeGraphicPaths>
 		<Male>Things/Pawn/Humanlike/Bodies/InfinityBody/InfinityBody_Male</Male>
@@ -84,13 +122,13 @@
 
 <!-- WarforgedBody -->
 	<GeneDef ParentName="Joe_SkinBodyBase">
-		<defName>Joe_WarforgedBody</defName>
+		<defName>Joe_WarforgedBody_Gene</defName>
 		<label>warforged body</label>
 		<labelShortAdj>warforged body</labelShortAdj>
-		<description>Carriers of this gene have a metal body with a high quality rust coating.</description>
-		<biostatCpx>1</biostatCpx>
+		<description>Carriers of this gene have a metal body with a high quality anti-rust coating.</description>
+		<biostatCpx>-5</biostatCpx>
 		<selectionWeight>0</selectionWeight>
-		<fur>Joe_WarforgedFur</fur>
+		<fur>Joe_WarforgedBody_Fur</fur>
 		<skinIsHairColor>false</skinIsHairColor>
 		<tattoosVisible>false</tattoosVisible>
 		<renderNodeProperties>
@@ -125,33 +163,56 @@
         <combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
         <genes>
+			<!-- bodies -->
+			<li>Joe_WarforgedBody_Gene</li> <!-- fur -->  										<!-- cpx = -5 met = 0 -->
+			<li>Body_Standard</li> 															<!-- cpx/met = 0 -->
+			
+			<!-- heads --> 
+			<li>Joe_WarforgedHead_Gene</li> 														<!-- cpx = 0 met = 0 -->
+
+			<!-- appearance -->	
+			<li>Hair_BaldOnly</li> 															<!-- cpx/met = 0 -->
+			<li>Beard_NoBeardOnly</li> 														<!-- cpx/met = 0 -->
+			<li>Skin_LightGray</li>															<!-- cpx/met = 0 -->
+      		<li>Skin_Blue</li>																<!-- cpx/met = 0 -->
+			<!--<li>Skin_SlateGray</li>-->													<!-- cpx/met = 0 -->			
+			<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li> 					<!-- cpx = 2 met = -2 -->
+			<li MayRequire="sarg.alphagenes">AG_TarBlood</li> 								<!-- cpx = 1 met = 1 -->
+
+			<!-- buffs -->	
+			<li>LowSleep</li> 																<!-- cpx = 2 met = -4 -->
+			<li MayRequire="RedMattis.BigSmall.Core">BS_NaturalArmor</li> 					<!-- cpx = 1 met = -2 -->
+			<li>MeleeDamage_Strong</li> 													<!-- met = -2 -->
+			<li>Aggression_DeadCalm</li>													<!-- met = -1 -->
+			<li>AptitudeStrong_Construction</li> 											<!-- cpx = 2 met = -1 -->
+			<li MayRequire="RedMattis.BigSmall.Core">BS_GiantWeaponWielder</li> 			<!-- cpx = 1 met = 0 -->	
+			<li MayRequire="sarg.alphagenes">AG_PackMule</li>								<!-- met = -1 -->	
+			
+			<!-- debuffs -->
+			<li MayRequire="sarg.alphagenes">AG_ColdSlowness</li>							<!-- met = 1 -->
+			<li MayRequire="sarg.alphagenes">AG_HeatSlowness</li>							<!-- met = 1 -->
+			<li>AptitudeTerrible_Social</li> 												<!-- cpx = 1 met = 2 -->
+			<li>AptitudeTerrible_Plants</li> 												<!-- cpx = 1 met = 2 -->
+			<li>FireTerror</li> 															<!-- met = 4 -->
+
+			<!-- flavour / personality -->
+			<li>VU_Unliving</li>                               								 <!-- cpx = 2 met = -1 -->
+			<li>Sterile</li>         								                         <!-- met = 1 -->
+			<li>VU_Libido_None</li>							        						 <!-- cpx = 0 met = 0 -->
+			<li MayRequire="sarg.alphagenes">AG_LightSustenance</li>						 <!-- cpx = 4 met = -3 -->
+
+			<!-- abilities -->
+
+																							<!-- totals -->
+																							<!-- met (-6 to +6) = -13+10=-3 -->
+																							<!-- cpx (6 to 12) = 12 -->
+																							<!-- arc =  -->
+
+                
 				
-                <li>Hair_BaldOnly</li> 					
-				<li>Body_Standard</li> 				
-				<li>Beard_NoBeardOnly</li>	
-                <li>Ageless</li>
-				<li>Joe_WarforgedBody</li> 
-				<li>Joe_WarforgedHead</li> 
-				<li>Skin_LightGray</li>
-				<li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>	                
+				 
                 
-				<li>LowSleep</li> 
-                <li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li> 				
-                <li MayRequire="RedMattis.BigSmall.Core">BS_NaturalArmor</li> 
-				<li>Sterile</li> 	
-				<li>MeleeDamage_Strong</li> 	
-				<li>Aggression_DeadCalm</li>	
-                <li>AptitudeStrong_Construction</li> 
-                <li MayRequire="RedMattis.BigSmall.Core">BS_GiantWeaponWielder</li>
-				<li MayRequire="RedMattis.BigSmall.Core">BS_NoFood</li>			                
-                
-				<li MayRequire="sarg.alphagenes">AG_ColdSlowness</li>
-				<li MayRequire="sarg.alphagenes">AG_PackMule</li>
-				<li>AptitudeTerrible_Social</li> 
-				<li>AptitudeTerrible_Plants</li> 
-                <li MayRequire="sarg.alphagenes">AG_TarBlood</li>
-				<li>DiseaseFree</li>
-				<li>Immunity_SuperStrong</li>              
+				              
 		</genes>
     </XenotypeDef>
 

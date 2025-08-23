@@ -11,28 +11,48 @@
 		<iconPath>UI/Icons/Xenotypes/Elf</iconPath>
 		<inheritable>true</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
-		<genes>
-			<li MayRequire="det.stoneborn">DV_LifespanLong</li>
-			<li>Ears_Pointed</li>
-			<li>Body_Thin</li>
-			<li>Skin_InkBlack</li>				
-			<li>Beauty_Beautiful</li>
-			<li>Eyes_Gray</li>
-			<li>Hair_SnowWhite</li>
-			<li>Hair_LongOnly</li>
-			<li>ElongatedFingers</li>
-			<li>Beard_NoBeardOnly</li>
-			<li>Delicate</li>
-			<li>DiseaseFree</li>
-			<li>DarkVision</li>
-			<li>Mood_Pessimist</li>
-			<li>Fertile</li>
-			<li>Libido_Low</li>
-			<li>LowSleep</li>
-			<li>MeleeDamage_Weak</li>								
-			<li>MaxTemp_SmallDecrease</li>	
-			<li>AptitudeStrong_Intellectual</li>
-			<li>Aggression_Aggressive</li>
+		<genes>		
+
+			<!-- bodies -->
+			 <li>Body_Thin</li>									<!-- cpx/met = 0 -->
+
+			<!-- heads --> 
+
+			<!-- appearance -->
+			<li>Hair_SnowWhite</li>								<!-- cpx/met = 0 -->
+			<li>Hair_LongOnly</li>								<!-- cpx/met = 0 -->
+			<li>Beard_NoBeardOnly</li>							<!-- cpx/met = 0 -->
+			<li>Skin_InkBlack</li>								<!-- cpx/met = 0 -->
+			<li>Eyes_Gray</li>									<!-- cpx/met = 0 -->
+			<li>Ears_Pointed</li> 								<!-- cpx/met = 0 -->
+			<li>Beauty_Beautiful</li>							<!-- cpx = 0 met = -1 -->
+
+			<!-- buffs -->
+			<li>ElongatedFingers</li> 							<!-- cpx = 1 met = -1 -->
+			<li>DiseaseFree</li>								<!-- cpx = 1 arc = 1 -->
+			<li>LowSleep</li>									<!-- cpx = 2 met = -4 -->
+			<li>AptitudeStrong_Intellectual</li> 				<!-- cpx = 2 met = -1 -->
+			<li>DarkVision</li> 								<!-- met = -1 -->			
+			<li MayRequire="det.stoneborn">DV_LifespanLong</li> <!-- cpx = 0 met = 1-->
+			
+			<!-- debuffs -->
+			<li>Delicate</li> 									<!-- met = 3 -->
+			<li>Mood_Pessimist</li> 							<!-- met = 3 -->
+			<li>MeleeDamage_Weak</li> 							<!-- met = 1 -->
+			<li>MaxTemp_SmallDecrease</li>						<!-- met = 1 -->
+
+			<!-- flavour / personality -->
+			<li>Libido_Low</li>									<!-- cpx = 0 met = 0 -->
+			<li>Fertile</li>									<!-- cpx = 0 met = 0 -->
+			<li>Aggression_Aggressive</li> 						<!-- met = 2 -->
+			<li>BS_EverFertile</li>								<!-- cpx = 1 -->
+
+			<!-- abilities -->
+			
+																<!-- totals -->
+																<!-- met (-6 to +6) = -8 +11 = 3 -->
+																<!-- cpx (6 to 12) = 7 -->
+																<!-- arc = 1 --> 
 		 </genes>
 		</XenotypeDef>
 

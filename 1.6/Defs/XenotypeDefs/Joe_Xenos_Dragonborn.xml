@@ -55,32 +55,52 @@
 			<iconPath>UI/Icons/Xenotypes/Dragonborn</iconPath>
 			<inheritable>true</inheritable>
 			<genes>
-				<li>Joe_DragonHead_Gene</li>			  				    				
-				<li MayRequire="sarg.alphagenes">AG_ScalyBody</li>
-				<li MayRequire="sarg.alphagenes">AG_Skin_DeeperRed</li>
-				<li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>
-				<li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>
-				<li MayRequire="sarg.alphagenes">AG_EggLaying</li>
-				<li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor</li>	
-				<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>								
-				<li>Hair_BaldOnly</li>
-				<li>Skin_DeepRed</li>		
-				<li>Skin_InkBlack</li>
-				<li>Skin_PaleRed</li>
-				<li>Body_Hulk</li>
-				<li>Beard_NoBeardOnly</li>
-				<li>FireResistant</li>
-				<li>MeleeDamage_Strong</li>
-				<li>WoundHealing_Fast</li>
-				<li>Sleepy</li>
-				<li>Robust</li>
-				<li>Unstoppable</li>						
-				<li>Aggression_Aggressive</li>	 			
-				<li>MinTemp_SmallIncrease</li>
-				<li>AptitudeTerrible_Animals</li>
-				<li>AptitudeTerrible_Plants</li>
-				<li>AptitudeTerrible_Intellectual</li>				
-				<li>FireSpew</li>
+				<!-- bodies -->
+				<li>Body_Hulk</li> 													<!-- cpx/met = 0 -->
+			
+				<!-- heads -->
+				<li>Joe_DragonHead_Gene</li> 										<!-- cpx/met = 0 -->
+
+				<!-- appearance -->	
+				<li MayRequire="sarg.alphagenes">AG_ScalyBody</li>					<!-- cpx = 3 met = -1 -->
+				<li MayRequire="sarg.alphagenes">AG_Skin_DeeperRed</li>				<!-- cpx/met = 0 -->
+				<li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>				<!-- cpx/met = 0 -->
+				<li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>			<!-- cpx/met = 0 -->
+				<li>Hair_BaldOnly</li>												<!-- cpx/met = 0 -->
+				<li>Skin_DeepRed</li>												<!-- cpx/met = 0 -->
+				<li>Skin_InkBlack</li>												<!-- cpx/met = 0 -->
+				<li>Skin_PaleRed</li>												<!-- cpx/met = 0 -->
+				<li>Beard_NoBeardOnly</li>											<!-- cpx/met = 0 -->
+				<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>			<!-- cpx = 2 met = -2 -->
+				<li>Beauty_Ugly</li>												<!-- met = 1 -->
+
+				<!-- buffs -->	
+				<li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor</li>		<!-- cpx = 1 met = -2 -->
+				<li>FireResistant</li>												<!-- met = -2 -->
+				<li>MeleeDamage_Strong</li>											<!-- met = -2 -->
+				<li>WoundHealing_Fast</li>											<!-- met = -2 -->
+				<li>Robust</li>														<!-- met = -2 -->
+				<li>Unstoppable</li>                              					<!-- cpx = 1 met = -2 -->		
+			
+				<!-- debuffs -->
+				<li>Sleepy</li> 													<!-- met = 2 -->
+				<li>Aggression_Aggressive</li> 										<!-- met = 2 -->
+				<li>MinTemp_SmallIncrease</li>										<!-- met = 1 -->
+				<li>AptitudeTerrible_Animals</li>									<!-- cpx = 1 met = 2 -->
+				<li>AptitudeTerrible_Plants</li>									<!-- cpx = 1 met = 2 -->
+				<li>KillThirst</li> 												<!-- met = 4 -->
+			
+				<!-- flavour / personality -->
+				<li MayRequire="sarg.alphagenes">AG_EggLaying</li>					<!-- cpx = 3 met = -3 -->
+				<li>Joe_CannotWearHats_Gene</li>									<!-- cpx/met = 0 -->	
+			
+				<!-- abilities -->
+				<li>FireSpew</li>													<!-- met = -2 -->
+
+																					<!-- totals -->
+																					<!-- met (-6 to +6) =  -20+14= -6 -->
+																					<!-- cpx (6 to 12) = 12  -->
+																					<!-- arc =  0--> 
 			</genes>
 		</XenotypeDef>
 

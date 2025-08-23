@@ -22,6 +22,22 @@
 		</modExtensions>
   	</GeneDef>
 
+	<!-- Facial Animation (Mouth+Brows) Gene -->
+	<GeneDef MayRequire="nals.facialanimation" ParentName="BS_NalDisableBase">
+		<defName>Joe_FA_MouthBrows</defName>
+		<label>FA (mouth+brows)</label>
+		<description>Retains only the mouth and brows animations.</description>
+		<iconPath>GeneIcons/BS_NoFacialAnim</iconPath>
+		<modExtensions>
+			<li Class="BigAndSmall.PawnExtension">
+				<facialDisabler>
+					<browName>retain</browName>
+					<mouthName>retain</mouthName>
+				</facialDisabler>
+			</li>
+		</modExtensions>
+  	</GeneDef>
+
 
 
 

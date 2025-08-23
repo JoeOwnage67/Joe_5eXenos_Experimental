@@ -11,8 +11,6 @@
 		</exclusionTags>
 	</GeneDef>
 
-
-
 	<!-- Fur Body Base (body is hair colour) -->
 	<GeneDef Name="Joe_FurBodyBase" ParentName="Joe_BodyBase" Abstract="True">
 		<biostatCpx>0</biostatCpx>
@@ -63,5 +61,25 @@
 		</exclusionTags>
 		<randomChosen>true</randomChosen>
 	</GeneDef>
+
+	<!-- xenotype genes template -->
+			<!-- bodies -->
+			
+			<!-- heads --> 
+
+			<!-- appearance -->			
+
+			<!-- buffs -->			
+			
+			<!-- debuffs -->
+			
+			<!-- flavour / personality -->
+			
+			<!-- abilities -->
+
+			<!-- totals -->
+			<!-- met (-6 to +6) =  -->
+			<!-- cpx (6 to 12) =  -->
+			<!-- arc =  --> 
 
 </Defs>

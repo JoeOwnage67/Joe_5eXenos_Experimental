@@ -6,39 +6,57 @@
 	<XenotypeDef>
 		<defName>Joe_Orc_Xeno</defName>
 		<label>orc</label>
-		<description>Savage and fearless, Orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home.</description>
-		<descriptionShort>Orcs are savage, fearless warriors who seek glory through death and destruction.</descriptionShort>
+		<description>Savage and fearless, Orc tribes are ever in search of elves, dwarves, and humans to destroy. Motivated by their hatred of the civilized races of the world and their need to satisfy the demands of their deities, the orcs know that if they fight well and bring glory to their tribe, Gruumsh will call them home. Yet not all orcs tread the blood-soaked path of tradition. A rare few reject tribal warfare and strike out alone, driven by personal ambition, curiosity, or defiance. These lone orcs are unpredictable—some become mercenaries, wanderers, or even unlikely allies, while others forge new legacies in fire and chaos.</description>
+		<descriptionShort>Orcs are known to be savage, fearless warriors who seek glory through death and destruction.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Orc</iconPath>
 		<inheritable>true</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
     		<genes>
-				<li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>
-				<li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>	
-				<li MayRequire="sarg.alphagenes">AG_PackMule</li>
-				<li MayRequire="sarg.alphagenes">AG_GutturalVoice</li>
-				<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>
-				<li MayRequire="RedMattis.BigSmall.Core">BS_GiantWeaponWielder</li>
-				<li>Hair_BaldOnly</li>
-				<li>Beard_BushyOnly</li>
-				<li>Beard_Always</li>
-				<li>Ears_Pointed</li>				
-				<li>Headbone_MiniHorns</li>
-				<li>Body_Standard</li>
-				<li>Body_Hulk</li>
-				<li>Skin_Green</li>
-				<li>Brow_Heavy</li>
-				<li>FacialRidges</li>				
-				<li>MaxTemp_LargeIncrease</li>
-				<li>Aggression_HyperAggressive</li>
-				<li>MeleeDamage_Strong</li>
-				<li>KillThirst</li>
-				<li>Robust</li>
-				<li>AptitudeRemarkable_Melee</li>
-				<li>AptitudeTerrible_Social</li>
-				<li>AptitudeTerrible_Plants</li>
-				<li>AptitudeTerrible_Crafting</li>
-				<li>Fertile</li>
-				<li>Libido_High</li>
+			<!-- bodies -->
+			<li>Body_Standard</li> 												<!-- cpx/met = 0 -->
+			<li>Body_Hulk</li> 													<!-- cpx/met = 0 -->
+			
+			<!-- heads --> 
+
+			<!-- appearance -->		
+			<li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li> 			<!-- cpx/met = 0 -->
+			<li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li> 			<!-- cpx/met = 0 -->
+			<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>			<!-- cpx = 2 met = -2 -->
+			<li>Hair_BaldOnly</li>												<!-- cpx/met = 0 -->
+			<li>Beard_BushyOnly</li>											<!-- cpx/met = 0 -->
+			<li>Beard_Always</li>												<!-- cpx/met = 0 -->
+			<li>Ears_Pointed</li> 												<!-- cpx/met = 0 -->
+			<li>Headbone_MiniHorns</li> 										<!-- cpx/met = 0 -->
+			<li>Skin_Green</li>													<!-- cpx/met = 0 -->
+			<li>Brow_Heavy</li>													<!-- cpx/met = 0 -->
+			<li>FacialRidges</li>												<!-- cpx/met = 0 -->
+			<li>Beauty_Ugly</li>												<!-- met = 1 -->
+
+			<!-- buffs -->		
+			<li>MaxTemp_LargeIncrease</li>										<!-- met -2 -->
+			<li>MeleeDamage_Strong</li>											<!-- met -2 -->
+			<li>Robust</li>														<!-- met -2 -->
+			<li>AptitudeRemarkable_Melee</li>									<!-- cpx = 2 met = -3 -->					
+			
+			<!-- debuffs -->
+			<li>AptitudeTerrible_Social</li> 									<!-- cpx = 1 met = 2 -->
+			<li>AptitudeTerrible_Plants</li>									<!-- cpx = 1 met = 2 -->
+			<li>AptitudeTerrible_Crafting</li>									<!-- cpx = 1 met = 2 -->
+			
+			<!-- flavour / personality -->
+			<li MayRequire="sarg.alphagenes">AG_GutturalVoice</li>				<!-- cpx/met = 0 -->
+			<li MayRequire="RedMattis.BigSmall.Core">BS_GiantWeaponWielder</li> <!-- cpx = 1 met = 0 -->
+			<li>Aggression_Aggressive</li> 										<!-- met = 2 -->
+			<li>KillThirst</li>													<!-- met = 4 -->
+			<li>Fertile</li> 													<!-- cpx = 0 met = 0 -->
+			<li>Libido_High</li>												<!-- cpx = 0 met = 0 -->
+			
+			<!-- abilities -->
+
+																				<!-- totals -->
+																				<!-- met (-6 to +6) = 2 -->
+																				<!-- cpx (6 to 12) = 8 -->
+																				<!-- arc = 0 -->
 			</genes>
 	</XenotypeDef>
 </Defs>

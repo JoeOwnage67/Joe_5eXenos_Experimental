@@ -108,33 +108,52 @@
 		<iconPath>UI/Icons/Xenotypes/Undead</iconPath>
 		<inheritable>true</inheritable>
 		<genes>
-			<li>Joe_UndeadBody_Gene</li>
-			<li>Joe_UndeadHead_Gene</li>			
-            <li>BS_FA_Keep_Brows</li>           
-			<li>BS_Deathlike</li>
+            <!-- bodies -->
+            <li>Joe_UndeadBody_Gene</li> <!-- fur -->           <!-- cpx/met = 0 -->
+            <li>Body_Standard</li>                              <!-- cpx/met = 0 -->	
+			<li>Body_Thin</li>                                  <!-- cpx/met = 0 -->	
+			
+			<!-- heads -->
+            <li>Joe_UndeadHead_Gene</li>                        <!-- cpx/met = 0 --> 
 
-			<li>Deathless</li>						
-			<li>DiseaseFree</li>
-            <li>BS_VerySlowAging</li>
-			<li>MinTemp_SmallDecrease</li>
-			<li>LowSleep</li>
-			<li>Pain_Reduced</li>
-			<li>Libido_Low</li>
-			<li>Sterile</li>
-			<li>DarkVision</li>
-			<li>Unstoppable</li>
-            <li>FireWeakness</li>            
-            <li>MoveSpeed_Slow</li>
-            <li>AptitudeTerrible_Crafting</li>
-            <li>AptitudeTerrible_Intellectual</li>
+			<!-- appearance -->		
+            <li>BS_FA_Keep_Brows</li>                           <!-- cpx/met = 0 --> 
+            <li>Beauty_Ugly</li>                                <!-- met = 1 -->
+            <li>Hair_BaldOnly</li>                              <!-- cpx/met = 0 -->			
+			<li>Skin_SlateGray</li>                             <!-- cpx/met = 0 --> 
+			<li>Skin_LightGray</li>                             <!-- cpx/met = 0 --> 
+            <li>Skin_SheerWhite</li>                            <!-- cpx/met = 0 -->  	
 
-            <li>Beauty_Ugly</li>
-            <li>Hair_BaldOnly</li>
-			<li>Body_Standard</li>
-			<li>Body_Thin</li>
-			<li>Skin_SlateGray</li>
-			<li>Skin_LightGray</li>
-            <li>Skin_SheerWhite</li>            					
+			<!-- buffs -->
+            <li>Deathless</li>						
+			<li>VU_Unliving</li>                                <!-- cpx = 2 met = -1 -->
+            <li MayRequire="RedMattis.Undead">VU_NoBlood</li>   <!-- cpx = 2 met = -2 -->
+            <li>BS_Deathlike</li>                               <!-- cpx/met = 0 arc = 1 -->
+            <li>LowSleep</li>							        <!-- cpx = 2 met = -4 -->
+			<li>Pain_Reduced</li>                               <!-- met = -1 -->
+            <li>Unstoppable</li>                                <!-- cpx = 1 met = -2 -->
+            <li>MinTemp_SmallDecrease</li>	                    <!-- met = -1 -->
+			
+			<!-- debuffs -->            
+            <li>FireWeakness</li>                               <!-- cpx/met = 0 --> 
+            <li>MoveSpeed_Slow</li> 					        <!-- met = 3 -->
+            <li>AptitudeTerrible_Crafting</li>                  <!-- cpx = 1 met = 2 -->
+            <li>AptitudeTerrible_Intellectual</li>              <!-- cpx = 1 met = 2 -->
+            <li>VU_Pallor</li>                                   <!-- cpx = 0 met = 1 -->
+
+			<!-- flavour / personality -->
+            <li>VU_Libido_None</li>							        <!-- cpx = 0 met = 0 -->
+			<li>Sterile</li>                                    <!-- met = 1 -->
+            <li>BS_NightOwl</li>                                <!-- cpx = 1 -->
+            
+			
+			<!-- abilities -->
+             
+
+                                                                <!-- totals -->
+                                                                <!-- met (-6 to +6) = -11+10 = 1 -->
+                                                                <!-- cpx (6 to 12) = 10 -->
+                                                                <!-- arc = 1 --> 	
 		</genes>
 	</XenotypeDef>
 </Defs>

@@ -6,41 +6,61 @@
 	<XenotypeDef>
 		<defName>Joe_MountainDwarf_Xeno</defName>
 		<label>mountain dwarf</label>
-		<description>Mountain Dwarves are a breed of dwarves at home in the high peaks and rarified air of the rocky mountains. In many ways similar to their lowland cousins, mountain dwarves are slightly more reclusive and tend to focus on mining, forging, and crafting a bit more strongly -- their closeness to the dwarven deity Moradin is said to be a cause of this. It is said that a mountain dwarf is born in armor, but this is likely just a mild exaggeration.</description>
+		<description>Mountain Dwarves are a proud and stoic breed, dwelling not atop the peaks but deep within the bones of the mountains themselves. Their halls are carved into the living rock, vast networks of tunnels and chambers echoing with the rhythmic clang of hammers and the hiss of molten metal. Unlike their lowland cousins, mountain dwarves are more reclusive, preferring the solitude and strength of stone to the open air. Their lives revolve around mining, forging, and crafting—arts they consider sacred, passed down from Moradin, the Soul Forger himself. It is said that mountain dwarves are born with soot on their cheeks and iron in their veins, raised beside the forge-fire and taught to shape the world from beneath it. Their craftsmanship is legendary, their armor and weapons imbued with the essence of the mountain. To outsiders, their resilience and discipline may seem as if they were born in armor—but that’s only a slight exaggeration.</description>
 		<descriptionShort>Mountain Dwarves are a more reclusive subrace of Dwarf focused on mining, forging and crafting.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Dwarf</iconPath>
 		<inheritable>true</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
-			<li MayRequire="det.stoneborn">DV_BushyEyebrows</li>
-			<li MayRequire="det.stoneborn">DV_Stonecall</li>
-			<li MayRequire="det.stoneborn">DV_MightyLiver</li>
-			<li MayRequire="det.stoneborn">DV_Undergrounder</li>
-			<li MayRequire="det.stoneborn">DV_Aggression_Irascible</li>
-			<li MayRequire="RedMattis.BigSmall.Core">DwarfFrame</li>
-			<li MayRequire="sarg.alphagenes">AG_MiningYield_High</li>
-			<li>Beard_BushyOnly</li>
-			<li>Beard_Always</li>
-			<li>Body_Fat</li>
-  			<li>Body_Standard</li>
-  			<li>Body_Hulk</li>		
-			<li>MoveSpeed_Slow</li>
-			<li>Robust</li>
-  			<li>Libido_High</li>
-  			<li>WoundHealing_Slow</li>
-  			<li>Immunity_Strong</li>	  			
-  			<li>Nearsighted</li>
-			<li>MinTemp_SmallDecrease</li>
-  			<li>MaxTemp_SmallDecrease</li>	  			
-  			<li>AptitudePoor_Social</li>
-  			<li>AptitudeStrong_Mining</li>
-  			<li>AptitudePoor_Animals</li>
-  			<li>AptitudePoor_Plants</li>
-  			<li>AptitudeRemarkable_Crafting</li>
-			<li>Skin_Melanin1</li>
-			<li>Skin_Melanin2</li>
-			<li>Skin_Melanin3</li>
-			<li>Skin_Melanin4</li>			
+
+			<!-- bodies -->
+			<li>Body_Fat</li> 											<!-- cpx/met = 0 -->
+	  		<li>Body_Standard</li> 										<!-- cpx/met = 0 -->
+	  		<li>Body_Hulk</li> 											<!-- cpx/met = 0 -->	
+			
+			<!-- heads --> 
+
+			<!-- appearance -->	
+			<li MayRequire="det.stoneborn">DV_BushyEyebrows</li>		<!-- cpx/met = 0 -->
+			<li MayRequire="RedMattis.BigSmall.Core">DwarfFrame</li>	<!-- cpx = 1 met = 5 -->
+			<li>Beard_BushyOnly</li>									<!-- cpx/met = 0 -->
+			<li>Beard_Always</li>										<!-- cpx/met = 0 -->
+			<li>Skin_Melanin1</li>										<!-- cpx/met = 0 -->
+			<li>Skin_Melanin2</li>										<!-- cpx/met = 0 -->
+			<li>Skin_Melanin3</li>										<!-- cpx/met = 0 -->
+			<li>Skin_Melanin4</li>										<!-- cpx/met = 0 -->
+
+			<!-- buffs -->
+			<li MayRequire="sarg.alphagenes">AG_MiningYield_High</li> 	<!-- met = 2 -->
+			<li MayRequire="det.stoneborn">DV_Undergrounder</li>		<!-- cpx = 1 -->
+			<li MayRequire="det.stoneborn">DV_MightyLiver</li>			<!-- cpx = 1 met = 0 -->	
+			<li>Robust</li>												<!-- met = -2 -->		
+			<li>Immunity_Strong</li>									<!-- met = -1 -->
+			<li>MinTemp_SmallDecrease</li>								<!-- met = -1 -->
+			<li>AptitudeStrong_Mining</li>								<!-- cpx = 2 met = -1 -->
+			<li>AptitudeRemarkable_Crafting</li>						<!-- cpx = 2 met = -3 -->
+			
+			<!-- debuffs -->
+			<li MayRequire="det.stoneborn">DV_Aggression_Irascible</li> <!-- met = 1 -->
+			<li>MoveSpeed_Slow</li>										<!-- met = 3 -->
+			<li>WoundHealing_Slow</li>									<!-- met = 2 -->
+			<li>Nearsighted</li>										<!-- met = 2 -->
+			<li>MaxTemp_SmallDecrease</li>								<!-- met = 1 -->
+			<li>AptitudePoor_Social</li>								<!-- cpx = 1 met = 1 -->
+			<li>AptitudePoor_Animals</li>								<!-- cpx = 1 met = 1 -->
+	  		<li>AptitudePoor_Plants</li>								<!-- cpx = 1 met = 1 -->
+			
+			<!-- flavour / personality -->
+			<li>Libido_High</li>										<!-- cpx = 0 met = 0 -->
+			
+			
+			<!-- abilities -->
+			<li MayRequire="det.stoneborn">DV_Stonecall</li>			<!-- cpx = 1 met = -3 -->
+
+																		<!-- totals -->
+																		<!-- met (-6 to +6) = -8+19=11 -->
+																		<!-- cpx (6 to 12) =  10 -->
+																		<!-- arc =  0 -->
 		</genes>
 	</XenotypeDef>
 </Defs>

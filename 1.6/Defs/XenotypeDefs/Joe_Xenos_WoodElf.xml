@@ -12,23 +12,41 @@
     	<inheritable>true</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
     	<genes>
-			<li MayRequire="det.stoneborn">DV_LifespanLong</li>
-			<li>Ears_Pointed</li>
-			<li>Body_Thin</li>
-			<li>Beauty_Beautiful</li>
-			<li>Hair_LongOnly</li>
-			<li>ElongatedFingers</li>
-			<li>Beard_NoBeardOnly</li>	
-			<li>Delicate</li>
-			<li>DiseaseFree</li>				
-			<li>MeleeDamage_Weak</li>
-			<li>KindInstinct</li>
-			<li>Fertile</li>
-			<li>Libido_Low</li>
-			<li>LowSleep</li>								
-			<li>AptitudeTerrible_Melee</li>
-			<li>AptitudeRemarkable_Plants</li>				
-			<li>AnimalWarcall</li>			
+			<!-- bodies -->
+			<li>Body_Thin</li>									<!-- cpx/met = 0 -->
+			
+			<!-- heads --> 
+
+			<!-- appearance -->
+			<li>Ears_Pointed</li> 								<!-- cpx/met = 0 -->			
+			<li>Beauty_Beautiful</li>							<!-- cpx = 0 met = -1 -->
+			<li>Hair_LongOnly</li>								<!-- cpx/met = 0 -->
+			<li>Beard_NoBeardOnly</li>							<!-- cpx/met = 0 -->
+
+			<!-- buffs -->			
+			<li MayRequire="det.stoneborn">DV_LifespanLong</li> <!-- cpx = 0 met = 1-->
+			<li>DiseaseFree</li> 								<!-- cpx = 1 arc = 1 -->
+			<li>ElongatedFingers</li> 							<!-- cpx = 1 met = -1 -->
+			<li>LowSleep</li>									<!-- cpx = 2 met = -4 -->
+			<li>AptitudeRemarkable_Plants</li>					<!-- cpx = 2 met = -3 -->
+
+			<!-- debuffs -->
+			<li>Delicate</li> 									<!-- met = 3 -->
+			<li>MeleeDamage_Weak</li> 							<!-- met = 1 -->
+			<li>AptitudeTerrible_Melee</li> 					<!-- cpx = 1 met = 2 -->
+			
+			<!-- flavour / personality -->
+			<li>KindInstinct</li>								<!-- met = -1 -->
+			<li>Fertile</li>									<!-- cpx = 0 met = 0 -->
+			<li>Libido_Low</li>									<!-- cpx = 0 met = 0 -->
+			<li>BS_EverFertile</li>								<!-- cpx = 1 -->
+			
+			<!-- abilities -->
+			
+																<!-- totals -->
+																<!-- met (-6 to +6) = -10 +7 = -3 -->
+																<!-- cpx (6 to 12) =  8 -->
+																<!-- arc =  1 -->						
     	</genes>
     </XenotypeDef>
 

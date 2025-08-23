@@ -34,4 +34,23 @@
         </value>                                
     </Operation> 
 
+    <!-- Joe_FA_NoMouth gene added to Tabaxi -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Joe_Tabaxi_Xeno"]/genes</xpath>
+        <value>
+            <li>Joe_FA_NoMouth</li>
+        </value>                                
+    </Operation> 
+
+    <!-- Joe_FA_MouthBrows gene added to Warforged -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Joe_Warforged_Xeno"]/genes</xpath>
+        <value>
+            <li>Joe_FA_MouthBrows</li>
+        </value>                                
+    </Operation> 
+
+
+    
+
 </Patch>
