@@ -1,0 +1,14 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\bin\x64\Debug\net472\Joe_5eXenos_v2.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\bin\x64\Debug\net472\Joe_5eXenos_v2.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\bin\x64\Debug\net472\0Harmony.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\bin\x64\Debug\net472\FacialAnimation.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\bin\x64\Debug\net472\FacialAnimationGeneticHeads.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\obj\x64\Debug\net472\Joe_5eXenos_v2.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\obj\x64\Debug\net472\Joe_5eXenos_v2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\obj\x64\Debug\net472\Joe_5eXenos_v2.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\obj\x64\Debug\net472\Joe_5eXenos_v2.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\obj\x64\Debug\net472\Joe_5eXenos_v2.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\obj\x64\Debug\net472\Joe_5eXenos_v2.sourcelink.json
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\obj\x64\Debug\net472\Joe_5eXe.E79D0C8B.Up2Date
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\obj\x64\Debug\net472\Joe_5eXenos_v2.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Joe_5eXenos_Experimental\1.6\Assemblies\Source\Joe_5eXenos_v2\obj\x64\Debug\net472\Joe_5eXenos_v2.pdb

@@ -5,6 +5,7 @@
 	<LangVersion>10.0</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +16,9 @@
   <ItemGroup>
     <Reference Include="FacialAnimation">
       <HintPath>..\..\..\..\..\..\..\..\workshop\content\294100\1635901197\1.6\Assemblies\FacialAnimation.dll</HintPath>
+    </Reference>
+    <Reference Include="FacialAnimationGeneticHeads">
+      <HintPath>..\..\..\..\..\..\..\..\workshop\content\294100\3498759997\Assemblies\FacialAnimationGeneticHeads.dll</HintPath>
     </Reference>
   </ItemGroup>
 

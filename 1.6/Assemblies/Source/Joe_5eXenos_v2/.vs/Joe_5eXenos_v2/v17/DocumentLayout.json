@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Joe_5eXenos_Experimental\\1.6\\Assemblies\\Source\\Joe_5eXenos_v2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{35CCD0CB-78CF-437D-85DE-497BDD70B832}|Joe_5eXenos_v2.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\joe_5exenos_experimental\\1.6\\assemblies\\source\\joe_5exenos_v2\\patch_diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35CCD0CB-78CF-437D-85DE-497BDD70B832}|Joe_5eXenos_v2.csproj|solutionrelative:patch_diagnostics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{35CCD0CB-78CF-437D-85DE-497BDD70B832}|Joe_5eXenos_v2.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\joe_5exenos_experimental\\1.6\\assemblies\\source\\joe_5exenos_v2\\patch_facetypegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35CCD0CB-78CF-437D-85DE-497BDD70B832}|Joe_5eXenos_v2.csproj|solutionrelative:patch_facetypegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Patch_Diagnostics.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Joe_5eXenos_Experimental\\1.6\\Assemblies\\Source\\Joe_5eXenos_v2\\Patch_Diagnostics.cs",
+              "RelativeDocumentMoniker": "Patch_Diagnostics.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Joe_5eXenos_Experimental\\1.6\\Assemblies\\Source\\Joe_5eXenos_v2\\Patch_Diagnostics.cs",
+              "RelativeToolTip": "Patch_Diagnostics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T20:19:26.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Patch_FaceTypeGenerator.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Joe_5eXenos_Experimental\\1.6\\Assemblies\\Source\\Joe_5eXenos_v2\\Patch_FaceTypeGenerator.cs",
               "RelativeDocumentMoniker": "Patch_FaceTypeGenerator.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Joe_5eXenos_Experimental\\1.6\\Assemblies\\Source\\Joe_5eXenos_v2\\Patch_FaceTypeGenerator.cs",
               "RelativeToolTip": "Patch_FaceTypeGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAiwL8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-24T19:27:21.858Z",
               "EditorCaption": ""

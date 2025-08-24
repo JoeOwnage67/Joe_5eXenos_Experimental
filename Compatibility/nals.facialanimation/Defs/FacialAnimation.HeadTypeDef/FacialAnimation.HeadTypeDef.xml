@@ -83,7 +83,7 @@
 		<!--<shader>Map/CutoutSkin</shader>-->
 		<shader>Map/CutoutComplex</shader>	  	
 		<probability>0</probability>
-		<modExtensions>
+		<!--<modExtensions>
 			<li Class="Joe_5eXenos.AllowedFacePartsExtension">
 				<allowedFaceParts>
 					<li>BrowTriangle</li>
@@ -91,7 +91,7 @@
 					<li>MouthNormal</li>
 				</allowedFaceParts>
 			</li>
-  		</modExtensions>
+  		</modExtensions>-->
   	</FacialAnimation.HeadTypeDef>
 
 </Defs>

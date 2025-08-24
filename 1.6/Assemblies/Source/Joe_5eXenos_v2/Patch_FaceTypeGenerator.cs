@@ -7,6 +7,7 @@ namespace Joe_5eXenos
 {
     // BrowType
     [HarmonyPatch(typeof(FaceTypeGenerator<BrowTypeDef>), "GetRandomDef")]
+    [HarmonyAfter("sd.geneticheads.patch")]
     public static class Patch_FaceTypeGenerator_Brow
     {
         static void Prefix(string raceName, Gender gender)
@@ -43,6 +44,7 @@ namespace Joe_5eXenos
 
     // MouthType
     [HarmonyPatch(typeof(FaceTypeGenerator<MouthTypeDef>), "GetRandomDef")]
+    [HarmonyAfter("sd.geneticheads.patch")]
     public static class Patch_FaceTypeGenerator_Mouth
     {
         static void Prefix(string raceName, Gender gender)
@@ -79,6 +81,7 @@ namespace Joe_5eXenos
 
     // SkinType
     [HarmonyPatch(typeof(FaceTypeGenerator<SkinTypeDef>), "GetRandomDef")]
+    [HarmonyAfter("sd.geneticheads.patch")]
     public static class Patch_FaceTypeGenerator_Skin
     {
         static void Prefix(string raceName, Gender gender)
@@ -115,6 +118,7 @@ namespace Joe_5eXenos
 
     // LidType
     [HarmonyPatch(typeof(FaceTypeGenerator<LidTypeDef>), "GetRandomDef")]
+    [HarmonyAfter("sd.geneticheads.patch")]
     public static class Patch_FaceTypeGenerator_Lid
     {
         static void Prefix(string raceName, Gender gender)
@@ -151,6 +155,7 @@ namespace Joe_5eXenos
 
     // EyeType
     [HarmonyPatch(typeof(FaceTypeGenerator<EyeballTypeDef>), "GetRandomDef")]
+    [HarmonyAfter("sd.geneticheads.patch")]
     public static class Patch_FaceTypeGenerator_Eye
     {
         static void Prefix(string raceName, Gender gender)
