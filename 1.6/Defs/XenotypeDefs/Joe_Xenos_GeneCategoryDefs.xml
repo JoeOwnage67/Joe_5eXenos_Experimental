@@ -5,16 +5,15 @@
 <GeneCategoryDef>
 		<defName>Joe_Tusks_Category</defName>
 		<label>tusks, whiskers</label>
-		<displayPriorityInXenotype>295.69</displayPriorityInXenotype>
-		<displayPriorityInGenepack>-110.69</displayPriorityInGenepack>
+		<displayPriorityInXenotype>295.61</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-110.61</displayPriorityInGenepack>
 </GeneCategoryDef>
 
 <GeneCategoryDef>
 		<defName>Joe_Bodies_Category</defName>
 		<label>bodies</label>
-		<displayPriorityInXenotype>294.59</displayPriorityInXenotype>
-		<displayPriorityInGenepack>-110.69</displayPriorityInGenepack>
+		<displayPriorityInXenotype>294.51</displayPriorityInXenotype>
+		<displayPriorityInGenepack>-110.61</displayPriorityInGenepack>
 </GeneCategoryDef>
-
 
 </Defs>
