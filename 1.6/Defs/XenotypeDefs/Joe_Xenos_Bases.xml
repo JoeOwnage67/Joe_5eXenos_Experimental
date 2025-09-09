@@ -62,6 +62,21 @@
 		<randomChosen>true</randomChosen>
 	</GeneDef>
 
+	<!-- Ears Parent -->
+	<GeneDef Name="Joe_EarGeneBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<endogeneCategory>Ears</endogeneCategory>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>115</displayOrderInCategory>
+	</GeneDef>
+
+	<!-- Eyes Parent  -->
+	<GeneDef Name="Joe_EyeGeneBase" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>116</displayOrderInCategory>
+	</GeneDef>
+
 	<!-- xenotype genes template -->
 			<!-- bodies -->
 			

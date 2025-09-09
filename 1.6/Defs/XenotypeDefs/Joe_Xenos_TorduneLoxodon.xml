@@ -7,6 +7,9 @@
 	    <iconPath>UI/Icons/Genes/Joe_ObstructedVision_Gene</iconPath>
 	    <description>The followers of Tordune wear an eyepatch as a badge of honour. This causes their vision to be obstructed to some degree. Tordune Loxodons make up for this by being handy with a blade.</description>	
 		<displayCategory>Miscellaneous</displayCategory>
+		<prerequisite>
+    		<li>Joe_LoxoHead_Gene</li>
+  		</prerequisite>
 	    <displayOrderInCategory>50</displayOrderInCategory>	    
 	    <biostatMet>3</biostatMet>
 	    <exclusionTags>
@@ -77,6 +80,52 @@
           </renderNodeProperties>
 	</HediffDef>
 
+	<!-- Rogue Flavor GeneDefs -->
+	<GeneDef>
+	  <defName>Joe_TorduneEvasion_Gene</defName>
+	  <label>evasion</label>
+	  <description>Refined reflexes and practiced footwork let this Tordune slip past blows and reposition fluidly, at the cost of a leaner, energy-hungry frame.</description>
+	  <iconPath>UI/Icons/Genes/Joe_TorduneEvasion_Gene</iconPath>
+	  <displayCategory>Miscellaneous</displayCategory>
+	  <biostatMet>0</biostatMet>
+	  <prerequisite>
+    		<li>Joe_LoxoHead_Gene</li>
+  		</prerequisite>
+	  <capMods>
+	    <li>
+	      <capacity>Manipulation</capacity>
+	      <postFactor>1.02</postFactor>
+	    </li>
+	  </capMods>
+	  <statOffsets>
+	    <MeleeDodgeChance>0.06</MeleeDodgeChance>
+	    <MoveSpeed>0.05</MoveSpeed>
+	    <ShootingAccuracyPawn>-0.02</ShootingAccuracyPawn>
+	    <ArmorRating_Blunt>-0.02</ArmorRating_Blunt>
+	    <RestRateMultiplier>-0.02</RestRateMultiplier>
+	  </statOffsets>
+	</GeneDef>
+
+	<GeneDef>
+	  <defName>Joe_TorduneSneakAttack_Gene</defName>
+	  <label>sneak attack</label>
+	  <description>Coiled patience and ruthless timing sharpen the Tordune's opening strikes, trading broad social grace and scholarly focus for lethal precision.</description>
+	  <iconPath>UI/Icons/Genes/Joe_TorduneSneakAttack_Gene</iconPath>
+	  <displayCategory>Miscellaneous</displayCategory>
+	  <biostatMet>0</biostatMet>
+	  <prerequisite>
+    		<li>Joe_LoxoHead_Gene</li>
+  		</prerequisite>
+	  <statOffsets>
+	    <MeleeHitChance>0.04</MeleeHitChance>
+	    <MoveSpeed>0.03</MoveSpeed>
+	    <SocialImpact>-0.02</SocialImpact>
+	    <GlobalLearningFactor>-0.02</GlobalLearningFactor>
+	    <RestRateMultiplier>-0.015</RestRateMultiplier>
+	    <MentalBreakThreshold>-0.01</MentalBreakThreshold>
+	  </statOffsets>
+	</GeneDef>
+
 	<!-- Tordune Xenotype -->
 	<XenotypeDef>
   		<defName>Joe_TorduneLoxo_Xeno</defName>
@@ -103,7 +152,7 @@
 
 			<!-- buffs -->
 			<li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor</li>							<!-- cpx = 1 met = -2 -->            
-			<li>BS_PerfectMemory</li>																<!-- cpx = 1 met = -1 -->										
+			<li>BS_PerfectMemory</li>																<!-- Elephant never forgets cpx = 1 met = -1 -->										
 			<li>KindInstinct</li>																	<!-- met = -1 -->
 			<li>MeleeDamage_Strong</li> 															<!-- met = -2 -->
 			<li>Robust</li>																			<!-- met = -2 -->
@@ -118,10 +167,13 @@
 			<!-- flavour / personality -->
 			<li MayRequire="Neronix17.Outland.Genetics">Outland_DeceleratedPregnancy</li>			<!-- met = 1 -->			
 		    <li MayRequire="Neronix17.Outland.Genetics">Outland_Voice_Beastly</li>					<!-- cpx/met = 0 -->
-			<li>Joe_TorduneFollower_Gene</li>														<!-- cpx/met = 3 -->
-			<li>Joe_CannotWearHats_Gene</li>														<!-- cpx/met = 0 -->			
+			<li>Joe_TorduneFollower_Gene</li>														<!-- cpx/met = 3 -->		
 
 			<!-- abilities -->
+
+			<!-- rogue-flavor genes -->
+			<li>Joe_TorduneEvasion_Gene</li>
+			<li>Joe_TorduneSneakAttack_Gene</li>
 
 																									<!-- totals -->
 																									<!-- met (-6 to +6) = -12+8= -4-->
@@ -135,68 +187,5 @@
 			
 					       
 		</genes>
-
-		<!-- old tordune xeno stuff -->
-
-		<!-- Tordune Head -->
-
-		<!-- Tordune Head Right Eyepatch 
-		<HeadTypeDef ParentName="AverageBase">
-				<defName>LHeadTorduneRight</defName>
-				<graphicPath>Things/Pawn/Humanlike/Heads/TorduneHead/Right/LHeadTorduneRight</graphicPath>
-				<gender>None</gender>
-				<requiredGenes>
-					<li>Joe_TorduneHead_Gene</li>
-				</requiredGenes>
-		</HeadTypeDef> -->
-		
-		<!-- Tordune Head Left Eyepatch 
-		<HeadTypeDef ParentName="AverageBase">
-				<defName>LHeadTorduneLeft</defName>
-				<graphicPath>Things/Pawn/Humanlike/Heads/TorduneHead/Left/LHeadTorduneLeft</graphicPath>
-				<gender>None</gender>
-				<requiredGenes>
-					<li>Joe_TorduneHead_Gene</li>
-				</requiredGenes>
-		</HeadTypeDef>-->
-
-		<!-- tordune head gene
-		<GeneDef ParentName="GeneJawBase">
-			<defName>Joe_TorduneHead_Gene</defName>
-			<label>tordune head</label>
-			<description>Carriers of this gene have a head featuring elephant-like features, with an eyepatch over one eye. A nearly prehensile trunk offers a slight gain to manipulation, and their tough skin offers protection against blunt and sharp weapons.</description>
-			<iconPath>UI/Icons/Genes/Joe_TorduneHead_Gene</iconPath>
-			<forcedHeadTypes>
-				<li>LHeadTorduneLeft</li>
-				<li>LHeadTorduneRight</li>
-			</forcedHeadTypes>
-			<displayOrderInCategory>9802</displayOrderInCategory>
-			<biostatMet>2</biostatMet>
-			<capMods>
-				<li>
-					<capacity>Manipulation</capacity>
-					<postFactor>1.1</postFactor>
-				</li>
-			</capMods>
-			<statOffsets>
-				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-				<ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
-				<MiningSpeed>0.1</MiningSpeed>
-			</statOffsets>
-			<hairTagFilter>
-				<whitelist>true</whitelist>
-				<tags>
-					<li>Bald</li>
-				</tags>
-			</hairTagFilter>
-			<beardTagFilter>
-				<whitelist>true</whitelist>
-				<tags>
-					<li>NoBeard</li>
-				</tags>
-			</beardTagFilter>
-		</GeneDef> -->
-
 	</XenotypeDef>
 </Defs>

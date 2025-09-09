@@ -10,6 +10,5 @@
 		<li IfModActive="sarg.alphagenes">Compatibility/sarg.alphagenes</li>		
 		<li IfModActive="RedMattis.Undead">Compatibility/RedMattis.Undead</li>
 		<li IfModActive="nals.facialanimation">Compatibility/nals.facialanimation</li>
-		<li IfModActive="sd.fa.geneticheadsframework">Compatibility/sd.fa.geneticheadsframework</li>
 	</v1.6>
 </loadFolders>

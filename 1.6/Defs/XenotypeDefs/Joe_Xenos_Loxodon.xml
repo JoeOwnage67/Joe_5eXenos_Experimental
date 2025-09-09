@@ -20,7 +20,7 @@
 	      	</requiredGenes>
 	</HeadTypeDef>
 
-	<!-- Loxodon Head Gene Def -->
+	<!-- Loxodon Head Gene Def (stats moved to specialized genes) -->
 	<GeneDef ParentName="GeneJawBase">
 		<defName>Joe_LoxoHead_Gene</defName>
 		<label>loxodon head</label>
@@ -29,18 +29,6 @@
 		<displayOrderInCategory>9802</displayOrderInCategory>
 		<biostatMet>2</biostatMet>	
 		<skinIsHairColor>false</skinIsHairColor>	
-		<capMods>
-			<li>
-				<capacity>Manipulation</capacity>
-				<postFactor>1.1</postFactor>
-			</li>
-		</capMods>
-		<statOffsets>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
-			<MiningSpeed>0.1</MiningSpeed>
-		</statOffsets>
 		<hairTagFilter>
 			<whitelist>true</whitelist>
 			<tags>
@@ -53,14 +41,14 @@
 				<li>NoBeard</li>
 			</tags>
 		</beardTagFilter>	
-	</GeneDef>	
+	</GeneDef>
 
-	<!-- Loxodon Tusks Gene -->
+	<!-- Loxodon Tusks Gene (receives sharp armor & mining speed) -->
 	<GeneDef ParentName="Joe_TuskGeneBase">
 		<defName>Joe_LoxoTusks_Gene</defName>
 		<label>loxodon tusks</label>
 		<displayCategory>Joe_Tusks_Category</displayCategory>
-		<description>Those born with this gene grow ornate tusks, often etched with the history of their lineage.</description>
+		<description>Those born with this gene grow ornate tusks, often etched with the history of their lineage. Their tusks afford some piercing protection and aid in prying or digging actions.</description>
 		<iconPath>UI/Icons/Genes/Joe_LoxoTusks_Gene</iconPath>		
 		<selectionWeight>0</selectionWeight>
 		<prerequisite>
@@ -69,6 +57,10 @@
 		<forcedHeadTypes>
 	    	<li>Joe_LoxoHeadTusks_Head</li>
 	    </forcedHeadTypes>
+		<statOffsets>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<MiningSpeed>0.1</MiningSpeed>
+		</statOffsets>
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
@@ -101,7 +93,7 @@
     	</modExtensions>
 	</GeneDef>
 	
-	<!-- Loxodon No Tusks Gene -->
+	<!-- Loxodon No Tusks Gene (unchanged visual; no added stats) -->
 	<GeneDef ParentName="Joe_TuskGeneBase">
 		<defName>Joe_LoxoNoTusks_Gene</defName>
 		<label>tuskless</label>
@@ -148,29 +140,41 @@
 	</GeneDef>	
 
 
-	<!-- Loxodon Ears Gene-->
+	<!-- Loxodon Ears Gene (carries sensitivity drawback) -->
 	<GeneDef ParentName="GeneEarsBase">
 		<defName>Joe_LoxoEars_Gene</defName>
 		<label>loxodon ears</label>
 		<selectionWeight>0</selectionWeight>
-		<description>Those born with this gene grow wide, fan-like ears, said to echo the wisdom of generations past.</description>
+		<description>Those born with this gene grow wide, fan-like ears, said to echo the wisdom of generations past. Their sensitivity leaves them slightly more affected by toxic environments.</description>
 		<iconPath>UI/Icons/Genes/Joe_LoxoEars_Gene</iconPath>
 		<prerequisite>
     		<li>Joe_LoxoHead_Gene</li>
-  		</prerequisite> 		
+  		</prerequisite>
+		<statOffsets>
+			<ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
+		</statOffsets>
 	</GeneDef>
 
-	<!-- Loxodon Trunk Gene -->
+	<!-- Loxodon Trunk Gene (manipulation & blunt resilience) -->
 	<GeneDef ParentName="GeneNoseBase">
 		<defName>Joe_LoxoTrunk_Gene</defName>
 		<label>loxodon trunk</label>
-		<description>Carriers of this gene develop powerful, dexterous trunks; an emblem of adaptability and ancestral might.</description>
+		<description>Carriers of this gene develop powerful, dexterous trunks; an emblem of adaptability and ancestral might. Their trunk grants fine control and distributes impact force.</description>
 		<iconPath>UI/Icons/Genes/Joe_LoxoTrunk_Gene</iconPath>
 		<prerequisite>
     		<li>Joe_LoxoHead_Gene</li>
-  		</prerequisite> 		
+  		</prerequisite>
 		<displayCategory>Miscellaneous</displayCategory>
-		<displayOrderInCategory>410</displayOrderInCategory>    
+		<displayOrderInCategory>410</displayOrderInCategory>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>1.1</postFactor>
+			</li>
+		</capMods>
+		<statOffsets>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		</statOffsets>
   	</GeneDef>
 
 	<!-- Loxodon Xenotype -->
@@ -203,7 +207,7 @@
 
 			<!-- buffs -->
 			<li>PsychicAbility_Enhanced</li>												<!-- met = -2 -->
-			<li>BS_PerfectMemory</li>														<!-- cpx = 1 met = -1 -->
+			<li>BS_PerfectMemory</li>														<!-- Elephant never forgets cpx = 1 met = -1 -->
 			<li>Aggression_DeadCalm</li>													<!-- met = -1 -->
 			<li>KindInstinct</li>															<!-- met = -1 -->
 			<li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor</li>					<!-- cpx = 1 met = -2 -->
@@ -217,7 +221,6 @@
 			<!-- flavour / personality -->
 			<li MayRequire="Neronix17.Outland.Genetics">Outland_DeceleratedPregnancy</li>	<!-- met = 1 -->			
 		    <li MayRequire="Neronix17.Outland.Genetics">Outland_Voice_Beastly</li>			<!-- cpx/met = 0 -->
-			<li>Joe_CannotWearHats_Gene</li>												<!-- cpx/met = 0 -->	
 			
 			<!-- abilities -->
 

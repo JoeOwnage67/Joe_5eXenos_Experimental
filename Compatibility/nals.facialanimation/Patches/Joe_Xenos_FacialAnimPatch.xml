@@ -50,6 +50,15 @@
         </value>                                
     </Operation> 
 
+    <!-- BS_FA_Keep_Brows gene added to Undead -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Joe_Undead_Xeno"]/genes</xpath>
+        <value>
+            <li>BS_FA_Keep_Brows</li> 
+        </value>                                
+    </Operation> 
+
+
 
     
 

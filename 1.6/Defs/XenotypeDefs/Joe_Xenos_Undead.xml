@@ -116,8 +116,7 @@
 			<!-- heads -->
             <li>Joe_UndeadHead_Gene</li>                        <!-- cpx/met = 0 --> 
 
-			<!-- appearance -->		
-            <li>BS_FA_Keep_Brows</li>                           <!-- cpx/met = 0 --> 
+			<!-- appearance -->		             
             <li>Beauty_Ugly</li>                                <!-- met = 1 -->
             <li>Hair_BaldOnly</li>                              <!-- cpx/met = 0 -->			
 			<li>Skin_SlateGray</li>                             <!-- cpx/met = 0 --> 

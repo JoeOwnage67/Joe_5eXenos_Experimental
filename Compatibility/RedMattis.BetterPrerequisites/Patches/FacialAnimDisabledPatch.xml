@@ -10,7 +10,6 @@
 					<xpath>Defs/XenotypeDef[defName="SAB_Loxodon"]/genes</xpath>
 						<value>											
 							<li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>
-							<li MayRequire="redmattis.bigsmall.core">Joe_CannotWearHats_Gene</li> 	
 						</value>   
 					</match>
 				</Operation>

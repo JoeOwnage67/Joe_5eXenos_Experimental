@@ -7,7 +7,7 @@
 		<!-- Tabaxi Head Type Def -->
 		<HeadTypeDef ParentName="AverageBase">
 				<defName>Joe_TabaxiHead_Head</defName>
-				<graphicPath>Things/Pawn/Humanlike/Heads/TabaxiHead/TabaxiHead/</graphicPath>
+				<graphicPath>Things/Pawn/Humanlike/Heads/TabaxiHead/TabaxiHead</graphicPath>
 				<gender>None</gender>
 				<requiredGenes>
 					<li>Joe_TabaxiHead_Gene</li>
@@ -19,22 +19,13 @@
 			<defName>Joe_TabaxiHead_Gene</defName>
 			<label>tabaxi head</label>
 			<description>Carriers of this gene have a head featuring tabaxi-like features. Their sharp senses and agility make them formidable hunters.</description>
-			<iconPath>UI/Icons/Genes/Joe_FelyneWhiskers_Gene</iconPath>		
+			<iconPath>UI/Icons/Genes/Joe_TabaxiHead_Gene</iconPath>		
 			<displayOrderInCategory>9802</displayOrderInCategory>
 			<biostatMet>2</biostatMet>	
 			<skinIsHairColor>false</skinIsHairColor>	
-			<capMods>
-				<li>
-					<capacity>Manipulation</capacity>
-					<postFactor>1.1</postFactor>
-				</li>
-			</capMods>
-			<statOffsets>
-				<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-				<ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
-				<MiningSpeed>0.1</MiningSpeed>
-			</statOffsets>
+			<forcedHeadTypes>
+	    		<li>Joe_TabaxiHead_Head</li>
+	    	</forcedHeadTypes>	
 			<hairTagFilter>
 				<whitelist>true</whitelist>
 				<tags>
@@ -47,38 +38,123 @@
 					<li>NoBeard</li>
 				</tags>
 			</beardTagFilter>
+			<renderNodeProperties>
+				<li>
+					<texPath>Things/Pawn/Humanlike/Heads/TabaxiHead/TabaxiHead</texPath>
+					<colorType>Hair</colorType>	
+					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>				
+					<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+					<useSkinShader>false</useSkinShader>
+					<useRottenColor>true</useRottenColor>
+					<shaderTypeDef>Cutout</shaderTypeDef>				
+					<parentTagDef>Head</parentTagDef>
+					<rotDrawMode>Fresh, Rotting</rotDrawMode>
+					<visibleFacing>
+						<li>East</li>
+						<li>South</li>
+						<li>West</li>
+						<li>North</li>
+					</visibleFacing>
+					<drawData>
+						<defaultData>
+							<layer>60</layer>
+						</defaultData>
+					</drawData>
+				</li>
+			</renderNodeProperties>			
 		</GeneDef>	
 
-<!-- Felyne Whiskers Gene -->
+	<!-- Felyne Whiskers Gene -->
 	<GeneDef ParentName="Joe_TuskGeneBase">
 		<defName>Joe_FelyneWhiskers_Gene</defName>
 		<label>felyne whiskers</label>
 		<displayCategory>Joe_Tusks_Category</displayCategory>
 		<description>Carriers of this gene grow fluffy Felyne whiskers.</description>
-		<iconPath>UI/Icons/Genes/Joe_FelyneWhiskers_Gene</iconPath>
-		<forcedHeadTypes>
-			<li>Joe_TabaxiHead_Head</li>			
-		</forcedHeadTypes>	
+		<iconPath>UI/Icons/Genes/Joe_FelyneWhiskers_Gene</iconPath>		
 		<selectionWeight>0</selectionWeight>
-		<!--<renderNodeProperties>
+		<prerequisite>
+    		<li>Joe_TabaxiHead_Gene</li>
+  		</prerequisite>
+		<statOffsets>
+			<MeleeDodgeChance>0.04</MeleeDodgeChance>
+			<MoveSpeed>0.05</MoveSpeed>
+			<ShootingAccuracyPawn>-0.02</ShootingAccuracyPawn>
+		</statOffsets>
+	</GeneDef>
+
+	<!-- Tabaxi Ears Gene  -->
+	<GeneDef ParentName="Joe_EarGeneBase">
+		<defName>Joe_TabaxiEars_Gene</defName>
+		<label>tabaxi ears</label>
+		<description>Carriers of this gene grow fluffy Tabaxi ears.</description>
+		<iconPath>UI/Icons/Genes/Joe_TabaxiEars_Gene</iconPath>		
+		<selectionWeight>0</selectionWeight>
+		<prerequisite>
+    		<li>Joe_TabaxiHead_Gene</li>
+  		</prerequisite>
+		<capMods>
 			<li>
-				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<parentTagDef>Head</parentTagDef>
-				<colorType>Skin</colorType>
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/Joe_FelyneWhiskers/Mashed_FelyneWhiskers</texPath>
-				<visibleFacing>
-					<li>East</li>
-					<li>South</li>
-					<li>West</li>
-				</visibleFacing>
-				<drawData>
-					<defaultData>
-						<layer>80</layer>
-					</defaultData>
-				</drawData>
+				<capacity>Hearing</capacity>
+				<postFactor>1.1</postFactor>
 			</li>
-		</renderNodeProperties>			-->
+		</capMods>
+		<statOffsets>
+			<SocialImpact>0.01</SocialImpact>
+			<AnimalGatherYield>0.03</AnimalGatherYield>
+			<ResearchSpeed>-0.02</ResearchSpeed>
+		</statOffsets>
+	</GeneDef>
+
+	<!-- Tabaxi Eyes Gene -->
+	<GeneDef ParentName="Joe_EyeGeneBase">
+		<defName>Joe_TabaxiEyes_Gene</defName>
+		<label>tabaxi eyes</label>
+		<description>Carriers of this gene have large, expressive eyes with slit pupils, enhancing their night vision.</description>
+		<iconPath>UI/Icons/Genes/Joe_TabaxiEyes_Gene</iconPath>		
+		<selectionWeight>0</selectionWeight>
+		<prerequisite>
+    		<li>Joe_TabaxiHead_Gene</li>
+  		</prerequisite>
+		<capMods> 
+			<li> 
+				<capacity>Sight</capacity> 
+				<postFactor>1.06</postFactor> 
+			</li> 
+		</capMods> 
+		<statOffsets> 
+			<ShootingAccuracyPawn>0.07</ShootingAccuracyPawn> 
+			<MeleeDodgeChance>0.02</MeleeDodgeChance> 
+			<PsychicSensitivity>-0.05</PsychicSensitivity> 
+			<GlobalLearningFactor>-0.02</GlobalLearningFactor>
+			<ShootingAccuracyOutdoorsDarkOffset>0.15</ShootingAccuracyOutdoorsDarkOffset> 
+		</statOffsets>
+	</GeneDef>
+
+	<!-- Tabaxi Fur -->
+	<FurDef>
+		<defName>Joe_TabaxiFur_Fur</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Male>Things/Pawn/Humanlike/Bodies/FurBody/FurCovered_Male</Male>
+			<Female>Things/Pawn/Humanlike/Bodies/FurBody/FurCovered_Female</Female>
+			<Hulk>Things/Pawn/Humanlike/Bodies/FurBody/FurCovered_Hulk</Hulk>
+			<Thin>Things/Pawn/Humanlike/Bodies/FurBody/FurCovered_Thin</Thin>
+			<Child>Things/Pawn/Humanlike/Bodies/FurBody/FurCovered_Child</Child>
+		</bodyTypeGraphicPaths>
+  	</FurDef>
+
+	<!-- Tabaxi Fur Body Gene -->
+	<GeneDef ParentName="Joe_FurBodyBase">
+		<defName>Joe_TabaxiFur_Gene</defName>
+		<label>tabaxi fur body</label>
+		<labelShortAdj>fur</labelShortAdj>
+		<description>Carriers of this gene have a thick layer of fur covering their bodies, providing insulation and protection.</description>
+		<iconPath>UI/Icons/Genes/Joe_FurBody_Gene</iconPath>
+		<fur>Joe_TabaxiFur_Fur</fur>	
+		<prerequisite>
+    		<li>Joe_TabaxiHead_Gene</li>
+  		</prerequisite>		
 	</GeneDef>
 
 <!-- Tabaxi Xenotype -->
@@ -92,23 +168,24 @@
 		<genes>			
 			
 			<!-- bodies -->
-			 <li>Body_Thin</li>											<!-- cpx/met = 0 -->
+			<li>Body_Thin</li>											<!-- cpx/met = 0 -->
 			
 			<!-- heads --> 
+			<li>Joe_TabaxiHead_Gene</li>
 
 			<!-- appearance -->
 			<li>Joe_FelyneWhiskers_Gene</li> 							<!-- cpx/met = 0 -->
+			<li>Joe_TabaxiFur_Gene</li>	
+			<li>Joe_TabaxiEars_Gene</li>
+			<li>Joe_TabaxiEyes_Gene</li>		
 			<li MayRequire="RedMattis.BigSmall.Core">DwarfFrame</li>	<!-- cpx = 1 met = 5 -->
 			<li>Beard_NoBeardOnly</li> 									<!-- cpx/met = 0 -->
 			<li>Hair_BaldOnly</li>										<!-- cpx/met = 0 -->
-			<li>Ears_Cat</li>											<!-- cpx/met = 0 -->
-			<li>Tail_Furry</li>											<!-- cpx = 1 met = -1 -->
-			<li>Furskin</li>											<!-- cpx = 1 met = -1 -->
-			<li>Hair_DarkReddish</li>									<!-- cpx/met = 0 -->
-			<li>Hair_DarkBrown</li>										<!-- cpx/met = 0 -->
+			<li>Tail_Furry</li>											<!-- cpx = 1 met = -1 -->								
 			<li>Hair_ReddishBrown</li>									<!-- cpx/met = 0 -->
 			<li>Hair_Blonde</li>										<!-- cpx/met = 0 -->
-			<li>Hair_LightOrange</li>									<!-- cpx/met = 0 -->			
+			<li>Hair_LightOrange</li>									<!-- cpx/met = 0 -->
+									<!-- cpx/met = 0 -->
 
 			<!-- buffs -->
 			<li>Learning_Fast</li><!-- Curious like a cat -->			<!-- cpx = 2 met = -3 -->

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>  
+    
+    <!-- no hats gene added to Dragonborn -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Joe_Dragonborn_Xeno"]/genes</xpath>
+        <value>
+            <li>Joe_CannotWearHats_Gene</li>
+        </value>                                
+    </Operation>
+
+    <!-- no hats gene added to Loxodon -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Joe_Loxodon_Xeno"]/genes</xpath>
+        <value>
+            <li>Joe_CannotWearHats_Gene</li>
+        </value>                                
+    </Operation> 
+
+    <!-- no hats gene added to Tordune Loxodon -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Joe_TorduneLoxo_Xeno"]/genes</xpath>
+        <value>
+            <li>Joe_CannotWearHats_Gene</li>
+        </value>                                
+    </Operation>    
+
+    <!-- SAB loxodon -->
+	<Operation Class="PatchOperationFindMod">
+	    <mods>
+		    <li>FRBE Addon - Loxo</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="SAB_Loxodon"]/genes</xpath>
+		<value>
+		   	<li>Joe_CannotWearHats_Gene</li> 	
+	    </value>   
+		</match>
+	</Operation>
+
+</Patch>

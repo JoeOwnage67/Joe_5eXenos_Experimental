@@ -59,19 +59,14 @@
 		    <tags>
 		    	<li>NoBeard</li>
 		    </tags>
-		</beardTagFilter>		
-		<!--<capMods>
-			<li>
-		    	<capacity>Manipulation</capacity>
-		    	<postFactor>1.1</postFactor>
-		    </li>
-		</capMods>-->
-		<!--<statOffsets>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-		    <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-		    <ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
-		    <MiningSpeed>0.1</MiningSpeed>
-		</statOffsets>-->			
+		</beardTagFilter>	
+		<!-- Stat effects: modest social presence, slight psychic dulling, a bit more break-prone but tougher to down -->
+		<statOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<PsychicSensitivity>-0.05</PsychicSensitivity>
+			<MentalBreakThreshold>0.02</MentalBreakThreshold>
+			<PainShockThreshold>0.03</PainShockThreshold>
+		</statOffsets>
 	</GeneDef>
 
 
@@ -86,31 +81,13 @@
 		<prerequisite>
     		<li>Joe_ShifterHead_Gene</li>
   		</prerequisite>   
-		<!--
-		<renderNodeProperties>
-			<li>
-				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/Joe_ShifterSnout/Joe_ShifterSnout</texPath>
-				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
-				<useSkinShader>true</useSkinShader>
-				<useRottenColor>true</useRottenColor>
-				<shaderTypeDef>CutoutComplex</shaderTypeDef>
-				<colorType>Hair</colorType>
-				<parentTagDef>Head</parentTagDef>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
-				<visibleFacing>
-				<li>East</li>
-				<li>South</li>
-				<li>West</li>
-				</visibleFacing>
-				<drawData>
-				<defaultData>
-					<layer>60</layer>
-				</defaultData>
-				</drawData>
-			</li>
-		</renderNodeProperties>   --> 
+		<!-- Stat effects: precision and eating efficiency, with mild social/trade drawbacks -->
+		<statOffsets>
+			<MeleeHitChance>0.04</MeleeHitChance>
+			<EatingSpeed>0.05</EatingSpeed>
+			<TradePriceImprovement>-0.02</TradePriceImprovement>
+			<SocialImpact>-0.05</SocialImpact>
+		</statOffsets>
   	</GeneDef>
 
 	<!-- Shifter Ears Gene-->
@@ -123,25 +100,18 @@
 		<prerequisite>
     		<li>Joe_ShifterHead_Gene</li>
   		</prerequisite>  	
-		<!--
-		<renderNodeProperties>
+		<!-- Capacity & stat effects: better hearing and animal rapport; slight psychic & learning penalty -->
+		<capMods>
 			<li>
-				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/Joe_ShifterEars/Joe_ShifterEars</texPath>
-				<shaderTypeDef>CutoutComplex</shaderTypeDef>
-				<colorType>Hair</colorType>
-				<parentTagDef>Head</parentTagDef>
-				<useSkinShader>true</useSkinShader>
-				<useRottenColor>true</useRottenColor>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
-				<drawData>
-					<defaultData>
-						<layer>60</layer>
-					</defaultData>
-				</drawData>
+				<capacity>Hearing</capacity>
+				<postFactor>1.1</postFactor>
 			</li>
-		</renderNodeProperties>-->
+		</capMods>
+		<statOffsets>
+			<AnimalGatherYield>0.05</AnimalGatherYield>
+			<PsychicSensitivity>-0.05</PsychicSensitivity>
+			<GlobalLearningFactor>-0.05</GlobalLearningFactor>
+		</statOffsets>
 	</GeneDef>	
 
 	<!-- Shifter Fur -->
@@ -152,6 +122,7 @@
 			<Male>Things/Pawn/Humanlike/Bodies/FurBody/FurCovered_Male</Male>
 			<Female>Things/Pawn/Humanlike/Bodies/FurBody/FurCovered_Female</Female>
 			<Hulk>Things/Pawn/Humanlike/Bodies/FurBody/FurCovered_Hulk</Hulk>
+			<Thin>Things/Pawn/Humanlike/Bodies/FurBody/FurCovered_Thin</Thin>
 			<Child>Things/Pawn/Humanlike/Bodies/FurBody/FurCovered_Child</Child>
 		</bodyTypeGraphicPaths>
   	</FurDef>
@@ -167,6 +138,13 @@
 		<prerequisite>
     		<li>Joe_ShifterHead_Gene</li>
   		</prerequisite>		
+		<!-- Environmental adaptation: colder comfort, slight upper range, tiny speed tax, increased flammability -->
+		<statOffsets>
+			<ComfyTemperatureMin>-6</ComfyTemperatureMin>
+			<ComfyTemperatureMax>2</ComfyTemperatureMax>
+			<MoveSpeed>-0.02</MoveSpeed>
+			<Flammability>0.10</Flammability>
+		</statOffsets>
 	</GeneDef>
 
 	<!-- Shifter Xenotype -->
