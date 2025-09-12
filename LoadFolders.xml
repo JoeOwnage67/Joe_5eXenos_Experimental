@@ -10,5 +10,6 @@
 		<li IfModActive="sarg.alphagenes">Compatibility/sarg.alphagenes</li>		
 		<li IfModActive="RedMattis.Undead">Compatibility/RedMattis.Undead</li>
 		<li IfModActive="nals.facialanimation">Compatibility/nals.facialanimation</li>
+		<li IfModActive="joeownage.facecustomizerfa">Compatibility/joeownage.facecustomizerfa</li>		
 	</v1.6>
 </loadFolders>

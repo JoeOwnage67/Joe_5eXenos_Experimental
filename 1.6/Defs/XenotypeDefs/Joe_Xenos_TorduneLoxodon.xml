@@ -149,6 +149,8 @@
 			<li>Joe_LoxoTrunk_Gene</li>																<!-- cpx/met = 0 -->
 			<li>Skin_InkBlack</li>																	<!-- cpx/met = 0 -->
 		    <li>Skin_SlateGray</li>																	<!-- cpx/met = 0 -->
+			<li>Hair_BaldOnly</li> 															<!-- cpx/met = 0 -->
+			<li>Beard_NoBeardOnly</li> 	
 
 			<!-- buffs -->
 			<li MayRequire="redmattis.bigsmall.core">BS_NaturalArmor</li>							<!-- cpx = 1 met = -2 -->            

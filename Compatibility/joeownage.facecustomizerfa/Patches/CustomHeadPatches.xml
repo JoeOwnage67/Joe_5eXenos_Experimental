@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    
+
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/FacialAnimation.HeadTypeDef[defName="Joe_Warforged_Head_FA"]</xpath>
+    <value>
+        <modExtensions>
+            <li Class="PawnCustomFace.AllowedFaceTypesExtension, PawnCustomFace">
+                <allowedEyeball>
+                    <li>Android</li>
+                </allowedEyeball>  
+            </li>
+        </modExtensions>
+    </value>
+</Operation>
+
+</Patch>
