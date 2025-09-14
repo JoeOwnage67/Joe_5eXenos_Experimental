@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<BeardDef>
+    <defName>Joe_OrcBushy</defName>
+    <label>bushy</label>
+    <texPath>Things/Pawn/Humanlike/Beards/OrcBeards/OrcBalin</texPath>
+    <styleGender>Male</styleGender>
+    <category>Tribal</category>
+    <styleTags>
+      <li>Beard_Orc</li>
+    </styleTags>
+  </BeardDef>
+
+</Defs>

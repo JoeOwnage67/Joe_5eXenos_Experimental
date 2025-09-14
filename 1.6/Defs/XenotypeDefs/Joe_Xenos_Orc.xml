@@ -71,6 +71,22 @@
 		</hairTagFilter>
   	</GeneDef>
 
+	<!-- Orc Beard Gene Def -->
+	<GeneDef ParentName="GeneBeardStyleBase">
+		<defName>Beard_OrcOnly</defName>
+		<label>only bushy beards</label>
+		<labelShortAdj>bushy</labelShortAdj>
+		<description>Male carriers of this gene experience rapid beard growth and are uncomfortable cutting their beards.</description>
+		<iconPath>UI/Icons/Genes/Gene_BeardStyleBushyOnly</iconPath>
+		<displayOrderInCategory>60</displayOrderInCategory>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Beard_Orc</li>
+			</tags>
+		</beardTagFilter>
+  	</GeneDef>
+
 <!-- Orc -->
 	<XenotypeDef>
 		<defName>Joe_Orc_Xeno</defName>
@@ -92,10 +108,8 @@
 			<li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li> 			<!-- cpx/met = 0 -->
 			<li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li> 			<!-- cpx/met = 0 -->
 			<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>			<!-- cpx = 2 met = -2 -->
-			<!--<li>Beard_BushyOnly</li>-->
-			<!--<li>Beard_Always</li>-->
 			<li>Hair_OrcOnly</li>
-			<li>Beard_NoBeardOnly</li>
+			<li>Beard_OrcOnly</li>
 			<li>Skin_Green</li>
 			<li>Beauty_Ugly</li>												<!-- met = 1 -->
 
