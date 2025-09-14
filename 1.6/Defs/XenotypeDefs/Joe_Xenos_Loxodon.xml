@@ -1,142 +1,87 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--====================== LOXO HEADS ======================-->
 
-	<!-- Loxodon Head Type Def -->
-	<HeadTypeDef ParentName="AverageBase">
-	    	<defName>Joe_LoxoHeadTusks_Head</defName>
-	      	<graphicPath>Things/Pawn/Humanlike/Heads/LoxoHead/LoxoHeadTusks/LoxoHeadTusks</graphicPath>
-	      	<gender>Male</gender>
-	      	<requiredGenes>
-	        	<li>Joe_LoxoHead_Gene</li>
-	      	</requiredGenes>
+	<!--====================== Bases ======================-->
+  
+	<HeadTypeDef Name="LoxoAverageFBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Joe_LoxoHead_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+  
+	<HeadTypeDef Name="LoxoAverageMBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Joe_LoxoHead_Gene</li>
+		</requiredGenes>
 	</HeadTypeDef>
 
-	<HeadTypeDef ParentName="AverageBase">
-	    	<defName>Joe_LoxoHeadNoTusks_Head</defName>
-	      	<graphicPath>Things/Pawn/Humanlike/Heads/LoxoHead/LoxoHeadNoTusks/LoxoHeadNoTusks</graphicPath>
-	      	<gender>Female</gender>
-	      	<requiredGenes>
-	        	<li>Joe_LoxoHead_Gene</li>
-	      	</requiredGenes>
+	<!--====================== Average Heads ======================-->
+
+	<HeadTypeDef ParentName="LoxoAverageFBase">
+		<defName>Joe_LoxoHeadFemale_Head</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/LoxoHead/Female/LoxoHeadFemale</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
+	</HeadTypeDef>
+  
+	<HeadTypeDef ParentName="LoxoAverageMBase">
+		<defName>Joe_LoxoHeadMale_Head</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/LoxoHead/Male/LoxoHeadMale</graphicPath>
+		<!--<eyeOffsetEastWest>(0.17, 0, 0.18)</eyeOffsetEastWest>-->		
 	</HeadTypeDef>
 
-	<!-- Loxodon Head Gene Def (stats moved to specialized genes) -->
+	<!--====================== LOXO GENEDEFS ======================-->
+
+	<!-- Loxodon Head Gene Def -->
+	
 	<GeneDef ParentName="GeneJawBase">
 		<defName>Joe_LoxoHead_Gene</defName>
 		<label>loxodon head</label>
+		<labelShortAdj>loxo</labelShortAdj>
 		<description>Carriers of this gene have a head featuring elephant-like features. A nearly prehensile trunk offers a slight gain to manipulation, and their tough skin offers protection against blunt and sharp weapons.</description>
-	    <iconPath>UI/Icons/Genes/Joe_LoxoHead_Gene</iconPath>		
-		<displayOrderInCategory>9802</displayOrderInCategory>
-		<biostatMet>2</biostatMet>	
-		<skinIsHairColor>false</skinIsHairColor>	
-		<hairTagFilter>
-			<whitelist>true</whitelist>
-			<tags>
-				<li>Bald</li>
-			</tags>
-		</hairTagFilter>
-		<beardTagFilter>
-			<whitelist>true</whitelist>
-			<tags>
-				<li>NoBeard</li>
-			</tags>
-		</beardTagFilter>	
+		<iconPath>UI/Icons/Genes/Joe_LoxoHead_Gene</iconPath>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>98</displayOrderInCategory>
+		<!--<iconColor>(0.75, 0.75, 0.75)</iconColor>-->
+		<!--<minMelanin>2</minMelanin>-->
+		<forcedHeadTypes>
+			<li>Joe_LoxoHeadFemale_Head</li>
+			<li>Joe_LoxoHeadMale_Head</li>
+		</forcedHeadTypes>
 	</GeneDef>
 
-	<!-- Loxodon Tusks Gene (receives sharp armor & mining speed) -->
+	<!-- Loxodon Tusks Gene -->
 	<GeneDef ParentName="Joe_TuskGeneBase">
 		<defName>Joe_LoxoTusks_Gene</defName>
 		<label>loxodon tusks</label>
 		<displayCategory>Joe_Tusks_Category</displayCategory>
-		<description>Those born with this gene grow ornate tusks, often etched with the history of their lineage. Their tusks afford some piercing protection and aid in prying or digging actions.</description>
+		<description>Male Loxodons grow ornate tusks, often etched with the history of their lineage. Their tusks afford some piercing protection and aid in prying or digging actions.</description>
 		<iconPath>UI/Icons/Genes/Joe_LoxoTusks_Gene</iconPath>		
 		<selectionWeight>0</selectionWeight>
 		<prerequisite>
     		<li>Joe_LoxoHead_Gene</li>
-  		</prerequisite> 
-		<forcedHeadTypes>
-	    	<li>Joe_LoxoHeadTusks_Head</li>
-	    </forcedHeadTypes>
+  		</prerequisite>
 		<statOffsets>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<MiningSpeed>0.1</MiningSpeed>
 		</statOffsets>
-		<renderNodeProperties>
-			<li>
-				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Pawn/Humanlike/Heads/LoxoHead/LoxoHeadTusks/LoxoHeadTusks</texPath>
-				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
-				<useSkinShader>true</useSkinShader>
-				<useRottenColor>true</useRottenColor>
-				<colorType>Skin</colorType>
-				<shaderTypeDef>CutoutComplex</shaderTypeDef>
-				<parentTagDef>Head</parentTagDef>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
-				<visibleFacing>
-					<li>East</li>
-					<li>South</li>
-					<li>West</li>
-					<li>North</li>
-				</visibleFacing>
-				<drawData>
-					<defaultData>
-						<layer>50</layer>
-					</defaultData>
-				</drawData>
-			</li>
-		</renderNodeProperties>
-		<modExtensions>
-      		<li Class="BigAndSmall.PawnExtension">
-        		<forceGender>Male</forceGender>
-      		</li>
-    	</modExtensions>
 	</GeneDef>
 	
-	<!-- Loxodon No Tusks Gene (unchanged visual; no added stats) -->
+	<!-- Loxodon No Tusks Gene -->
 	<GeneDef ParentName="Joe_TuskGeneBase">
 		<defName>Joe_LoxoNoTusks_Gene</defName>
 		<label>tuskless</label>
 		<displayCategory>Joe_Tusks_Category</displayCategory>
-		<description>Those born with this gene do not grow tusks, setting them apart from their tusked kin.</description>
+		<description>Female Loxodons do not grow tusks, setting them apart from their tusked kin.</description>
 		<iconPath>UI/Icons/Genes/Joe_LoxoTusks_Gene</iconPath>		
 		<selectionWeight>0</selectionWeight>
 		<prerequisite>
     		<li>Joe_LoxoHead_Gene</li>
-  		</prerequisite> 
-		<forcedHeadTypes>
-	    	<li>Joe_LoxoHeadNoTusks_Head</li>
-	    </forcedHeadTypes>
-		<renderNodeProperties>
-			<li>
-				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Pawn/Humanlike/Heads/LoxoHead/LoxoHeadNoTusks/LoxoHeadNoTusks</texPath>
-				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
-				<useSkinShader>true</useSkinShader>
-				<useRottenColor>true</useRottenColor>
-				<colorType>Skin</colorType>
-				<shaderTypeDef>Cutout</shaderTypeDef>
-				<parentTagDef>Head</parentTagDef>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
-				<visibleFacing>
-					<li>East</li>
-					<li>South</li>
-					<li>West</li>
-					<li>North</li>
-				</visibleFacing>
-				<drawData>
-					<defaultData>
-						<layer>50</layer>
-					</defaultData>
-				</drawData>
-			</li>
-		</renderNodeProperties>
-		<modExtensions>
-      		<li Class="BigAndSmall.PawnExtension">
-        		<forceGender>Female</forceGender>
-      		</li>
-    	</modExtensions>
+  		</prerequisite> 		
 	</GeneDef>	
 
 
@@ -204,6 +149,8 @@
       		<li>Skin_Blue</li>																<!-- cpx/met = 0 -->
       		<li>Skin_Purple</li>															<!-- cpx/met = 0 -->
 			<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>						<!-- cpx = 2 met = -2 -->
+			<li>Hair_BaldOnly</li> 															<!-- cpx/met = 0 -->
+			<li>Beard_NoBeardOnly</li> 	
 
 			<!-- buffs -->
 			<li>PsychicAbility_Enhanced</li>												<!-- met = -2 -->

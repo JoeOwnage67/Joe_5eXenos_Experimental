@@ -5,20 +5,19 @@
   	<FacialAnimation.HeadTypeDef>
 	  	<defName>Joe_Shifter_Head_FA</defName>
 	  	<texPath>Things/Pawn/FA/Heads_Blank/ShifterHead</texPath>
-	  	<raceName>Joe_Shifter_Head_FA</raceName>
 	  	<shader>Map/CutoutComplex</shader>	
-		<probability>0</probability>
+		<probability>1</probability>
 		<targetGeneDefs>
 					<li>Joe_ShifterHead_Gene</li>
 		</targetGeneDefs>
   	</FacialAnimation.HeadTypeDef>	
 
+
 	<FacialAnimation.HeadTypeDef>
 	  	<defName>Joe_Loxo_Head_FA</defName>
 	  	<texPath>Things/Pawn/FA/Heads_Blank/LoxoHead</texPath>
-	  	<raceName>Joe_Loxo_Head_FA</raceName>
 	  	<shader>Map/CutoutComplex</shader>	
-		<probability>0</probability>
+		<probability>1</probability>
 		<targetGeneDefs>
 					<li>Joe_LoxoHead_Gene</li>
 		</targetGeneDefs>
@@ -27,9 +26,8 @@
 	<FacialAnimation.HeadTypeDef>
 	  	<defName>Joe_Dragon_Head_FA</defName>
 	  	<texPath>Things/Pawn/FA/Heads_Blank/DragonHead</texPath>
-	  	<raceName>Joe_Dragon_Head_FA</raceName>
 	  	<shader>Map/CutoutComplex</shader>  	
-		<probability>0</probability>
+		<probability>1</probability>
 		<targetGeneDefs>
 					<li>Joe_DragonHead_Gene</li>
 		</targetGeneDefs>
@@ -38,9 +36,8 @@
 	<FacialAnimation.HeadTypeDef>
 	  	<defName>Joe_Undead_Head1_FA</defName>
 	  	<texPath>Things/Pawn/FA/Heads_Blank/UndeadHead1</texPath>
-	  	<raceName>Joe_Undead_Head1_FA</raceName>
 	  	<shader>Map/CutoutComplex</shader>	
-		<probability>0</probability>
+		<probability>1</probability>
 		<targetGeneDefs>
 					<li>Joe_UndeadHead_Gene</li>
 		</targetGeneDefs>
@@ -49,10 +46,8 @@
 	<FacialAnimation.HeadTypeDef>
 	  	<defName>Joe_Undead_Head2_FA</defName>
 	  	<texPath>Things/Pawn/FA/Heads_Blank/UndeadHead2</texPath>
-	  	<raceName>Joe_Undead_Head2_FA</raceName>
-	  	<shader>Map/CutoutComplex</shader>
-		<!--<shader>Map/CutoutSkin</shader>-->	  	
-		<probability>0</probability>
+	  	<shader>Map/CutoutComplex</shader>  	
+		<probability>1</probability>
 		<targetGeneDefs>
 					<li>Joe_UndeadHead_Gene</li>
 		</targetGeneDefs>
@@ -61,10 +56,8 @@
 	<FacialAnimation.HeadTypeDef>
 	  	<defName>Joe_Undead_Head3_FA</defName>
 	  	<texPath>Things/Pawn/FA/Heads_Blank/UndeadHead3</texPath>
-	  	<raceName>Joe_Undead_Head3_FA</raceName>
-	  	<shader>Map/CutoutComplex</shader>
-		<!--<shader>Map/CutoutSkin</shader>-->	  	
-		<probability>0</probability>
+	  	<shader>Map/CutoutComplex</shader>	  	
+		<probability>1</probability>
 		<targetGeneDefs>
 					<li>Joe_UndeadHead_Gene</li>
 		</targetGeneDefs>
@@ -73,10 +66,8 @@
 	<FacialAnimation.HeadTypeDef>
 	  	<defName>Joe_Undead_Head4_FA</defName>
 	  	<texPath>Things/Pawn/FA/Heads_Blank/UndeadHead4</texPath>
-	  	<raceName>Joe_Undead_Head4_FA</raceName>
-	  	<shader>Map/CutoutComplex</shader>
-		<!--<shader>Map/CutoutSkin</shader>-->	  	
-		<probability>0</probability>
+	  	<shader>Map/CutoutComplex</shader>  	
+		<probability>1</probability>
 		<targetGeneDefs>
 					<li>Joe_UndeadHead_Gene</li>
 		</targetGeneDefs>
@@ -85,38 +76,21 @@
 	<FacialAnimation.HeadTypeDef>
 	  	<defName>Joe_Tabaxi_Head_FA</defName>
 	  	<texPath>Things/Pawn/FA/Heads_Blank/TabaxiHead</texPath>
-	  	<raceName>Joe_Tabaxi_Head_FA</raceName>
-	  	<!--<shader>Map/CutoutComplex</shader>-->
-		<!--<shader>Map/CutoutSkin</shader>-->
 		<shader>Map/Cutout</shader>	  	
-		<probability>0</probability>
+		<probability>1</probability>
 		<targetGeneDefs>
-					<li>Joe_FelyneWhiskers_Gene</li>
+					<li>Joe_TabaxiHead_Gene</li>
 		</targetGeneDefs>
   	</FacialAnimation.HeadTypeDef>
 
 	<FacialAnimation.HeadTypeDef>
 	  	<defName>Joe_Warforged_Head_FA</defName>
 	  	<texPath>Things/Pawn/FA/Heads_Blank/WarforgedHead</texPath>
-	  	<raceName>Joe_Warforged_Head_FA</raceName>
-	  	<!--<shader>Map/CutoutComplex</shader>-->
-		<!--<shader>Map/CutoutSkin</shader>-->
 		<shader>Map/CutoutComplex</shader>	  	
-		<probability>0</probability>
+		<probability>1</probability>
 		<targetGeneDefs>
 					<li>Joe_WarforgedHead_Gene</li>
-		</targetGeneDefs>
-		<!--
-		<modExtensions>
-			<li Class="Joe_5eXenos.AllowedFacePartsExtension">
-				<allowedFaceParts>
-					<li>BrowTriangle</li>
-					<li>MonoBrow</li>
-					<li>MouthNormal</li>
-				</allowedFaceParts>
-			</li>
-  		</modExtensions>
-		-->
+		</targetGeneDefs>		
   	</FacialAnimation.HeadTypeDef>
 
 </Defs>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+    <!-- tagging hairs as orc hairs -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+	        <li MayRequire="ludeon.rimworld.anomaly" Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="Ghoul_Hungry"]</xpath>
+                <value>
+                    <styleTags>
+                        <li>Hair_Orc</li>
+                    </styleTags>
+                </value>
+            </li>
+
+            <li MayRequire="ludeon.rimworld.anomaly" Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="SideCut"]</xpath>
+                <value>
+                    <styleTags>
+                        <li>Hair_Orc</li>
+                    </styleTags>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="Randy"]/styleTags</xpath>
+                <value>
+                    <li>Hair_Orc</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="Rookie"]/styleTags</xpath>
+                <value>
+                    <li>Hair_Orc</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="Savage"]/styleTags</xpath>
+                <value>
+                    <li>Hair_Orc</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="ScorpionTail"]/styleTags</xpath>
+                <value>
+                    <li>Hair_Orc</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="Bald"]/styleTags</xpath>
+                <value>
+                    <li>Hair_Orc</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="Tuft"]/styleTags</xpath>
+                <value>
+                    <li>Hair_Orc</li>
+                </value>
+            </li>    
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="ShaveTopBraid"]/styleTags</xpath>
+                <value>
+                    <li>Hair_Orc</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="Scrapper"]/styleTags</xpath>
+                <value>
+                    <li>Hair_Orc</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/HairDef[defName="Mohawk"]/styleTags</xpath>
+                <value>
+                    <li>Hair_Orc</li>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+
+</Patch>

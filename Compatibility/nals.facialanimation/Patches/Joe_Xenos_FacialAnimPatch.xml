@@ -3,28 +3,28 @@
 <Patch>  
     
     <!-- Joe_FA_NoMouth gene added to Shifter -->
+    
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/XenotypeDef[defName="Joe_Shifter_Xeno"]/genes</xpath>
         <value>
             <li>Joe_FA_NoMouth</li>
         </value>                                
     </Operation>
-    
-    <!-- Joe_FA_NoMouth gene added to Loxodon -->
+    <!-- Joe_FA_NoMouth gene added to Loxodon  -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/XenotypeDef[defName="Joe_Loxodon_Xeno"]/genes</xpath>
         <value>
             <li>Joe_FA_NoMouth</li>
         </value>                                
-    </Operation>    
+    </Operation>   
 
-    <!-- Joe_FA_NoMouth gene added to Dragonborn -->
+    <!-- Joe_FA_NoMouth gene added to Dragonborn-->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/XenotypeDef[defName="Joe_Dragonborn_Xeno"]/genes</xpath>
         <value>
             <li>Joe_FA_NoMouth</li>
         </value>                                
-    </Operation> 
+    </Operation>  
 
     <!-- Joe_FA_NoMouth gene added to Tordune Loxodon -->
     <Operation Class="PatchOperationAdd">
@@ -50,13 +50,13 @@
         </value>                                
     </Operation> 
 
-    <!-- BS_FA_Keep_Brows gene added to Undead -->
+    <!-- BS_FA_Keep_Brows gene added to Undead-->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/XenotypeDef[defName="Joe_Undead_Xeno"]/genes</xpath>
         <value>
             <li>BS_FA_Keep_Brows</li> 
         </value>                                
-    </Operation> 
+    </Operation>  
 
 
 

@@ -2,6 +2,75 @@
 
 <Defs>
 
+	<!--====================== ORC HEADS ======================-->
+
+	<!--====================== Bases ======================-->
+
+	<HeadTypeDef Name="OrcAverageFBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Joe_OrcHead_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef Name="OrcAverageMBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Joe_OrcHead_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!--====================== Average Heads ======================-->
+
+	<HeadTypeDef ParentName="OrcAverageFBase">
+		<defName>Joe_OrcHeadFemale_Head</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/OrcHead/Female/OrcHeadFemale</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="OrcAverageMBase">
+		<defName>Joe_OrcHeadMale_Head</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/OrcHead/Male/OrcHeadMale</graphicPath>
+		<!--<eyeOffsetEastWest>(0.17, 0, 0.18)</eyeOffsetEastWest>-->		
+	</HeadTypeDef>
+
+	<!--====================== Orc GENEDEFS ======================-->
+
+	<!-- Orc Head Gene Def -->
+	<GeneDef ParentName="GeneJawBase">
+		<defName>Joe_OrcHead_Gene</defName>
+		<label>orc head</label>
+		<labelShortAdj>orc</labelShortAdj>
+		<description>Carriers of this gene have a head featuring orc-like features. Their prominent tusks and heavy brow give them a fearsome appearance, while their tough skin offers protection against blunt and sharp weapons.</description>
+		<iconPath>UI/Icons/Genes/Joe_OrcHead_Gene</iconPath>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>98</displayOrderInCategory>
+		<!--<iconColor>(0.75, 0.75, 0.75)</iconColor>-->
+		<!--<minMelanin>2</minMelanin>-->
+		<forcedHeadTypes>
+			<li>Joe_OrcHeadFemale_Head</li>
+			<li>Joe_OrcHeadMale_Head</li>
+		</forcedHeadTypes>
+	</GeneDef>
+
+	<!-- Orc Hair Gene Def -->
+	<GeneDef ParentName="GeneHairStyleBase">
+		<defName>Hair_OrcOnly</defName>
+		<label>orc-haired</label>
+		<labelShortAdj>orc</labelShortAdj>
+		<description>Carriers of this gene can only grow orc style hair.</description>
+		<iconPath>UI/Icons/Genes/Joe_OrcHead_Gene</iconPath>
+		<displayOrderInCategory>55</displayOrderInCategory>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Hair_Orc</li>
+			</tags>
+		</hairTagFilter>
+  	</GeneDef>
+
 <!-- Orc -->
 	<XenotypeDef>
 		<defName>Joe_Orc_Xeno</defName>
@@ -17,19 +86,17 @@
 			<li>Body_Hulk</li> 													<!-- cpx/met = 0 -->
 			
 			<!-- heads --> 
+			<li>Joe_OrcHead_Gene</li>
 
 			<!-- appearance -->		
 			<li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li> 			<!-- cpx/met = 0 -->
 			<li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li> 			<!-- cpx/met = 0 -->
 			<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>			<!-- cpx = 2 met = -2 -->
-			<li>Hair_BaldOnly</li>												<!-- cpx/met = 0 -->
-			<li>Beard_BushyOnly</li>											<!-- cpx/met = 0 -->
-			<li>Beard_Always</li>												<!-- cpx/met = 0 -->
-			<li>Ears_Pointed</li> 												<!-- cpx/met = 0 -->
-			<li>Headbone_MiniHorns</li> 										<!-- cpx/met = 0 -->
-			<li>Skin_Green</li>													<!-- cpx/met = 0 -->
-			<li>Brow_Heavy</li>													<!-- cpx/met = 0 -->
-			<li>FacialRidges</li>												<!-- cpx/met = 0 -->
+			<!--<li>Beard_BushyOnly</li>-->
+			<!--<li>Beard_Always</li>-->
+			<li>Hair_OrcOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Skin_Green</li>
 			<li>Beauty_Ugly</li>												<!-- met = 1 -->
 
 			<!-- buffs -->		
