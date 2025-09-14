@@ -30,12 +30,12 @@
                 </value>
             </li>
 
-            <li Class="PatchOperationAdd">
+            <!--<li Class="PatchOperationAdd">
                 <xpath>Defs/HairDef[defName="Rookie"]/styleTags</xpath>
                 <value>
                     <li>Hair_Orc</li>
                 </value>
-            </li>
+            </li>-->
 
             <li Class="PatchOperationAdd">
                 <xpath>Defs/HairDef[defName="Savage"]/styleTags</xpath>
@@ -65,12 +65,12 @@
                 </value>
             </li>    
 
-            <li Class="PatchOperationAdd">
+            <!--<li Class="PatchOperationAdd">
                 <xpath>Defs/HairDef[defName="ShaveTopBraid"]/styleTags</xpath>
                 <value>
                     <li>Hair_Orc</li>
                 </value>
-            </li>
+            </li>-->
 
             <li Class="PatchOperationAdd">
                 <xpath>Defs/HairDef[defName="Scrapper"]/styleTags</xpath>

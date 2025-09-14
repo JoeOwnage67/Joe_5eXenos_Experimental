@@ -2,14 +2,14 @@
 
 <Patch>  
     
-    <!-- Joe_FA_NoMouth gene added to Shifter -->
-    
+    <!-- Joe_FA_NoMouth gene added to Shifter -->    
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/XenotypeDef[defName="Joe_Shifter_Xeno"]/genes</xpath>
         <value>
             <li>Joe_FA_NoMouth</li>
         </value>                                
     </Operation>
+
     <!-- Joe_FA_NoMouth gene added to Loxodon  -->
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/XenotypeDef[defName="Joe_Loxodon_Xeno"]/genes</xpath>
@@ -57,6 +57,14 @@
             <li>BS_FA_Keep_Brows</li> 
         </value>                                
     </Operation>  
+
+    <!-- Joe_FA_NoMouth gene added to Orc -->    
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/XenotypeDef[defName="Joe_Orc_Xeno"]/genes</xpath>
+        <value>
+            <li>Joe_FA_NoMouth</li>
+        </value>                                
+    </Operation>
 
 
 

@@ -93,4 +93,14 @@
 		</targetGeneDefs>		
   	</FacialAnimation.HeadTypeDef>
 
+	<FacialAnimation.HeadTypeDef>
+	  	<defName>Joe_Orc_Head_FA</defName>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/OrcHead</texPath>
+		<shader>Map/CutoutComplex</shader>	  	
+		<probability>1</probability>
+		<targetGeneDefs>
+					<li>Joe_OrcHead_Gene</li>
+		</targetGeneDefs>		
+  	</FacialAnimation.HeadTypeDef>
+
 </Defs>

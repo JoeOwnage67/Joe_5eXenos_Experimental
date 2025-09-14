@@ -3,9 +3,20 @@
 <Defs>
 
 	<BeardDef>
-    <defName>Joe_OrcBushy</defName>
+    <defName>Joe_OrcBalin</defName>
     <label>bushy</label>
     <texPath>Things/Pawn/Humanlike/Beards/OrcBeards/OrcBalin</texPath>
+    <styleGender>Male</styleGender>
+    <category>Tribal</category>
+    <styleTags>
+      <li>Beard_Orc</li>
+    </styleTags>
+  </BeardDef>
+
+  	<BeardDef>
+    <defName>Joe_OrcDwalin</defName>
+    <label>bushy</label>
+    <texPath>Things/Pawn/Humanlike/Beards/OrcBeards/OrcDwalin</texPath>
     <styleGender>Male</styleGender>
     <category>Tribal</category>
     <styleTags>

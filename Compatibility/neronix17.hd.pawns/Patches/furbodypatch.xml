@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>  
+    
+    <!-- use alternative textures for furbody -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FurDef[defName="Joe_TabaxiFur_Fur"]/bodyTypeGraphicPaths</xpath>
+        <value>
+            <bodyTypeGraphicPaths>
+                <Male>Things/Pawn/Humanlike/Bodies/FurCovered_Male</Male>
+                <Female>Things/Pawn/Humanlike/Bodies/FurCovered_Female</Female>
+                <Hulk>Things/Pawn/Humanlike/Bodies/FurCovered_Hulk</Hulk>
+                <Thin>Things/Pawn/Humanlike/Bodies/FurCovered_Thin</Thin>
+                <Child>Things/Pawn/Humanlike/Bodies/FurCovered_Child</Child>
+		    </bodyTypeGraphicPaths>
+        </value>                                
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FurDef[defName="Joe_ShifterFur_Fur"]/bodyTypeGraphicPaths</xpath>
+        <value>
+            <bodyTypeGraphicPaths>
+                <Male>Things/Pawn/Humanlike/Bodies/FurCovered_Male</Male>
+                <Female>Things/Pawn/Humanlike/Bodies/FurCovered_Female</Female>
+                <Hulk>Things/Pawn/Humanlike/Bodies/FurCovered_Hulk</Hulk>
+                <Thin>Things/Pawn/Humanlike/Bodies/FurCovered_Thin</Thin>
+                <Child>Things/Pawn/Humanlike/Bodies/FurCovered_Child</Child>
+		    </bodyTypeGraphicPaths>
+        </value>                                
+    </Operation>
+
+</Patch>

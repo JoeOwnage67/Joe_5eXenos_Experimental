@@ -24,7 +24,8 @@
 		<li>RedMattis.BigSmall.Core</li> <!-- Big and Small - Genes & More -->
 		<li>neronix17.outland.genetics</li> <!-- Outland Genetics -->
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li> <!-- Vanilla Expanded Framework -->
-		<li>nals.facialanimation</li> <!-- Facial Animation -->	
+		<li>nals.facialanimation</li> <!-- Facial Animation -->
+		<li>neronix17.hd.pawns</li> <!-- HD Pawns -->
 	</loadAfter>
 
 	<modDependencies>
