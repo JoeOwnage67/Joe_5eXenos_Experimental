@@ -85,7 +85,7 @@
 
 	<FacialAnimation.HeadTypeDef>
 	  	<defName>Joe_Warforged_Head_FA</defName>
-	  	<texPath>Things/Pawn/FA/Heads_Blank/WarforgedHead</texPath>
+	  	<texPath>Things/Pawn/FA/Heads_Blank/WarHead</texPath>
 		<shader>Map/CutoutComplex</shader>	  	
 		<probability>1</probability>
 		<targetGeneDefs>
