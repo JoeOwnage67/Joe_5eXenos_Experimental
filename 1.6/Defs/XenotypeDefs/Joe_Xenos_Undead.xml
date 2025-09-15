@@ -2,41 +2,80 @@
 
 <Defs>
 
-    <!-- Undead head types -->
-	<HeadTypeDef Name="Joe_UndeadHeadBase" ParentName="AverageBase" Abstract="True">
-		<selectionWeight>100000</selectionWeight>
+    <!--====================== Undead HEADS ======================-->
+
+	<!--====================== Bases ======================-->
+
+	<HeadTypeDef Name="UndeadAverageFBase" ParentName="AverageBase" Abstract="True">
 		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
 		<requiredGenes>
 			<li>Joe_UndeadHead_Gene</li>
 		</requiredGenes>
 	</HeadTypeDef>
 
-	<HeadTypeDef ParentName="Joe_UndeadHeadBase">
-		<defName>Joe_UndeadHead1</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Average_Normal</graphicPath>
-		<gender>None</gender>
+	<HeadTypeDef Name="UndeadAverageMBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Joe_UndeadHead_Gene</li>
+		</requiredGenes>
 	</HeadTypeDef>
 
-	<HeadTypeDef ParentName="Joe_UndeadHeadBase">
-		<defName>Joe_UndeadHead2</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Average_Wa</graphicPath>
-		<gender>None</gender>
+	<!--====================== Average Heads ======================-->
+
+	<HeadTypeDef ParentName="TabaxiAverageFBase">
+		<defName>Joe_UndeadFemale_Head1</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Female/Average_Normal</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 
-	<HeadTypeDef ParentName="Joe_UndeadHeadBase">
-		<defName>Joe_UndeadHead3</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Average_Normal</graphicPath>
-		<gender>None</gender>
+    <HeadTypeDef ParentName="TabaxiAverageFBase">
+		<defName>Joe_UndeadFemale_Head2</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Female/Average_Wa</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 
-	<HeadTypeDef ParentName="Joe_UndeadHeadBase">
-		<defName>Joe_UndeadHead4</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Average_Wa</graphicPath>
-		<gender>None</gender>
+    <HeadTypeDef ParentName="TabaxiAverageFBase">
+		<defName>Joe_UndeadFemale_Head3</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Female/Average_Normal</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 
-    <!-- Joe_UndeadHead Gene -->
-    <GeneDef ParentName="GeneJawBase">
+    <HeadTypeDef ParentName="TabaxiAverageFBase">
+		<defName>Joe_UndeadFemale_Head4</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Female/Average_Wa</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ShifterAverageMBase">
+		<defName>Joe_UndeadMale_Head1</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Male/Average_Normal</graphicPath>
+		<!--<eyeOffsetEastWest>(0.17, 0, 0.18)</eyeOffsetEastWest>-->		
+	</HeadTypeDef>
+    
+    <HeadTypeDef ParentName="TabaxiAverageMBase">
+		<defName>Joe_UndeadMale_Head2</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Male/Average_Wa</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
+	</HeadTypeDef>
+
+    <HeadTypeDef ParentName="TabaxiAverageMBase">
+		<defName>Joe_UndeadMale_Head3</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Male/Average_Normal</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
+	</HeadTypeDef>
+
+    <HeadTypeDef ParentName="TabaxiAverageMBase">
+		<defName>Joe_UndeadMale_Head4</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Male/Average_Wa</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
+	</HeadTypeDef>
+
+	<!--====================== Undead GENEDEFS ======================-->
+
+	<!-- Undead Head Gene Def -->
+	<GeneDef ParentName="GeneJawBase">
         <defName>Joe_UndeadHead_Gene</defName>
         <label>undead head</label>
         <selectionWeight>0</selectionWeight>
@@ -44,13 +83,21 @@
         <biostatCpx>0</biostatCpx>
         <biostatMet>0</biostatMet>
         <iconPath>UI/Icons/Genes/Joe_UndeadHead_Gene</iconPath>
-        <forcedHeadTypes>
-            <li>Joe_UndeadHead1</li>
-            <li>Joe_UndeadHead2</li>
-            <li>Joe_UndeadHead3</li>
-            <li>Joe_UndeadHead4</li>
-        </forcedHeadTypes>		
-        <beardTagFilter>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>98</displayOrderInCategory>
+		<!--<iconColor>(0.75, 0.75, 0.75)</iconColor>-->
+		<!--<minMelanin>2</minMelanin>-->
+		<forcedHeadTypes>
+			<li>Joe_UndeadFemale_Head1</li>
+            <li>Joe_UndeadFemale_Head2</li>
+            <li>Joe_UndeadFemale_Head3</li>
+            <li>Joe_UndeadFemale_Head4</li>
+			<li>Joe_UndeadMale_Head1</li>
+            <li>Joe_UndeadMale_Head2</li>
+            <li>Joe_UndeadMale_Head3</li>
+            <li>Joe_UndeadMale_Head4</li>
+		</forcedHeadTypes>
+		<beardTagFilter>
             <whitelist>true</whitelist>
             <tags>
                 <li>NoBeard</li>
@@ -63,6 +110,7 @@
             </tags>
         </hairTagFilter>
 	</GeneDef>
+
 
     <!-- Joe Undead Furdef -->
     <FurDef>
@@ -119,9 +167,9 @@
 			<!-- appearance -->		             
             <li>Beauty_Ugly</li>                                <!-- met = 1 -->
             <li>Hair_BaldOnly</li>                              <!-- cpx/met = 0 -->			
-			<li>Skin_SlateGray</li>                             <!-- cpx/met = 0 --> 
+			<!--<li>Skin_SlateGray</li> -->                            <!-- cpx/met = 0 --> 
 			<li>Skin_LightGray</li>                             <!-- cpx/met = 0 --> 
-            <li>Skin_SheerWhite</li>                            <!-- cpx/met = 0 -->  	
+            <!--<li>Skin_SheerWhite</li> -->                           <!-- cpx/met = 0 -->  	
 
 			<!-- buffs -->
             <li>Deathless</li>						

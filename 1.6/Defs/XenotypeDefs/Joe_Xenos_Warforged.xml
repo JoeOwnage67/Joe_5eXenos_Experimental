@@ -1,76 +1,81 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+<!--====================== WARFORGED HEADS ======================-->
 
-		<!-- WarforgedHead -->
-		<HeadTypeDef ParentName="AverageBase">
-				<defName>Joe_WarforgedHead_Head</defName>
-				<graphicPath>Things/Pawn/Humanlike/Heads/WarforgedHead/WarforgedHead</graphicPath>
-				<gender>None</gender>
-				<requiredGenes>
-					<li>Joe_WarforgedHead_Gene</li>
-				</requiredGenes>
-		</HeadTypeDef>
+	<!--====================== Bases ======================-->
 
-		<!-- Joe_WarforgedHead Gene -->
-		<GeneDef ParentName="GeneJawBase">
-			<defName>Joe_WarforgedHead_Gene</defName>
-			<label>warforged head</label>
-			<description>The head of a warforged is constructed of both organic and inorganic materials. All warforged have crystalline eyes, a hinged jawline and a prominent brow.</description>
-			<iconPath>UI/Icons/Genes/Joe_WarFace_Gene</iconPath>
-			<forcedHeadTypes>	    	
-				<li>Joe_WarforgedHead_Head</li>
-			</forcedHeadTypes>
-			<displayOrderInCategory>9802</displayOrderInCategory>
-			<biostatMet>2</biostatMet>
-			<capMods>
-				<li>
-					<capacity>Manipulation</capacity>
-					<postFactor>1.1</postFactor>
-				</li>
-			</capMods>
-			<statOffsets>
-				<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-				<ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
-			</statOffsets>
-			<hairTagFilter>
-				<whitelist>true</whitelist>
-				<tags>
-					<li>Bald</li>
-				</tags>
-			</hairTagFilter>
-			<beardTagFilter>
-				<whitelist>true</whitelist>
-				<tags>
-					<li>NoBeard</li>
-				</tags>
-			</beardTagFilter>
-			<renderNodeProperties>
-				<li>
-					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-					<texPath>Things/Pawn/Humanlike/Heads/WarforgedHead/WarforgedHead</texPath>
-					<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
-					<useSkinShader>true</useSkinShader>
-					<useRottenColor>true</useRottenColor>
-					<colorType>Skin</colorType>
-					<shaderTypeDef>CutoutComplex</shaderTypeDef>
-					<parentTagDef>Head</parentTagDef>
-					<rotDrawMode>Fresh, Rotting</rotDrawMode>
-					<visibleFacing>
-						<li>East</li>
-						<li>South</li>
-						<li>West</li>
-						<li>North</li>
-					</visibleFacing>
-					<drawData>
-						<defaultData>
-							<layer>50</layer>
-						</defaultData>
-					</drawData>
-				</li>
-			</renderNodeProperties>
-		</GeneDef>
+	<HeadTypeDef Name="WarforgedAverageFBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Joe_WarforgedHead_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef Name="WarforgedAverageMBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Joe_WarforgedHead_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!--====================== Average Heads ======================-->
+
+	<HeadTypeDef ParentName="WarforgedAverageFBase">
+		<defName>Joe_WarforgedFemale_Head</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/WarforgedHead/Female/WarforgedHead</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="WarforgedAverageMBase">
+		<defName>Joe_WarforgedMale_Head</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/WarforgedHead/Male/WarforgedHead</graphicPath>
+		<!--<eyeOffsetEastWest>(0.17, 0, 0.18)</eyeOffsetEastWest>-->		
+	</HeadTypeDef>
+
+	<!--====================== Warforged GENEDEFS ======================-->
+
+	<!-- Warforged Head Gene Def -->
+	<GeneDef ParentName="GeneJawBase">
+		<defName>Joe_WarforgedHead_Gene</defName>
+		<label>warforged head</label>
+		<description>The head of a warforged is constructed of both organic and inorganic materials. All warforged have crystalline eyes, a hinged jawline and a prominent brow.</description>
+		<iconPath>UI/Icons/Genes/Joe_WarFace_Gene</iconPath>	
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>98</displayOrderInCategory>
+		<biostatMet>2</biostatMet>	
+		<skinIsHairColor>false</skinIsHairColor>	
+		<!--<iconColor>(0.75, 0.75, 0.75)</iconColor>-->
+		<!--<minMelanin>2</minMelanin>-->
+		<forcedHeadTypes>
+			<li>Joe_WarforgedMale_Head</li>
+			<li>Joe_WarforgedFemale_Head</li>
+		</forcedHeadTypes>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>1.1</postFactor>
+			</li>
+		</capMods>
+		<statOffsets>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
+		</statOffsets>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+	</GeneDef>
 
 		<!-- Warforged Fur -->
 		<FurDef>

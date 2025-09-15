@@ -1,53 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs> 
+	<!--====================== SHIFTER HEADS ======================-->
 
-	<!-- Shifter HeadTypeDef -->
-	<HeadTypeDef ParentName="AverageBase">
-	    	<defName>Joe_ShifterHead_Head</defName>
-	      	<graphicPath>Things/Pawn/Humanlike/Heads/ShifterHead/ShifterHead</graphicPath>
-	      	<gender>None</gender>
-	      	<requiredGenes>
-	        	<li>Joe_ShifterHead_Gene</li>
-	      	</requiredGenes>
-			<selectionWeight>1</selectionWeight>
-	</HeadTypeDef>	
+	<!--====================== Bases ======================-->
 
-	<!-- Shifter Head Gene Def -->
+	<HeadTypeDef Name="ShifterAverageFBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Joe_ShifterHead_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef Name="ShifterAverageMBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Joe_ShifterHead_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!--====================== Average Heads ======================-->
+
+	<HeadTypeDef ParentName="ShifterAverageFBase">
+		<defName>Joe_ShifterFemale_Head</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ShifterHead/Female/ShifterHeadFemale</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="ShifterAverageMBase">
+		<defName>Joe_ShifterMale_Head</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ShifterHead/Male/ShifterHeadMale</graphicPath>
+		<!--<eyeOffsetEastWest>(0.17, 0, 0.18)</eyeOffsetEastWest>-->		
+	</HeadTypeDef>
+
+	<!--====================== SHIFTER GENEDEFS ======================-->
+
+	<!-- SHIFTER Head Gene Def -->
 	<GeneDef ParentName="GeneJawBase">
 		<defName>Joe_ShifterHead_Gene</defName>
 		<label>shifter head</label>
 		<description>This gene reshapes the carrier’s head into a lupine visage—sleek, angular, and brimming with primal intensity. Keen senses, powerful jaws, and expressive ears grant the bearer a predator’s edge and a pack-born charisma. It’s more than a look; it’s a legacy of wild cunning and untamed spirit.</description>
 	    <iconPath>UI/Icons/Genes/Joe_ShifterHead_Gene</iconPath>
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>98</displayOrderInCategory>
+		<biostatMet>0</biostatMet>	
+		<!--<iconColor>(0.75, 0.75, 0.75)</iconColor>-->
+		<!--<minMelanin>2</minMelanin>-->
 		<forcedHeadTypes>
-	    	<li>Joe_ShifterHead_Head</li>
-	    </forcedHeadTypes>
-		<displayOrderInCategory>9802</displayOrderInCategory>
-		<biostatMet>0</biostatMet>		
-		<renderNodeProperties>
-			<li>
-				<texPath>Things/Pawn/Humanlike/Heads/ShifterHead/ShifterHead</texPath>
-				<colorType>Hair</colorType>	
-				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>				
-				<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
-				<useSkinShader>false</useSkinShader>
-				<useRottenColor>true</useRottenColor>
-				<shaderTypeDef>CutoutComplex</shaderTypeDef>				
-				<parentTagDef>Head</parentTagDef>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
-				<visibleFacing>
-					<li>East</li>
-					<li>South</li>
-					<li>West</li>
-					<li>North</li>
-				</visibleFacing>
-				<drawData>
-					<defaultData>
-						<layer>50</layer>
-					</defaultData>
-				</drawData>
-			</li>
-		</renderNodeProperties>			
+			<li>Joe_ShifterMale_Head</li>
+			<li>Joe_ShifterFemale_Head</li>
+		</forcedHeadTypes>
 		<hairTagFilter>
 			<whitelist>true</whitelist>
 			<tags>
@@ -59,8 +62,7 @@
 		    <tags>
 		    	<li>NoBeard</li>
 		    </tags>
-		</beardTagFilter>	
-		<!-- Stat effects: modest social presence, slight psychic dulling, a bit more break-prone but tougher to down -->
+		</beardTagFilter>
 		<statOffsets>
 			<SocialImpact>0.05</SocialImpact>
 			<PsychicSensitivity>-0.05</PsychicSensitivity>
@@ -68,7 +70,6 @@
 			<PainShockThreshold>0.03</PainShockThreshold>
 		</statOffsets>
 	</GeneDef>
-
 
 	<!-- Shifter Snout Gene -->	
 	 <GeneDef ParentName="GeneNoseBase">

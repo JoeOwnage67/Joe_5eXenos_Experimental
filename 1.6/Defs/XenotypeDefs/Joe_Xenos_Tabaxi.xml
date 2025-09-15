@@ -4,29 +4,59 @@
 
 <!-- Tabaxi -->
 
-		<!-- Tabaxi Head Type Def -->
-		<HeadTypeDef ParentName="AverageBase">
-				<defName>Joe_TabaxiHead_Head</defName>
-				<graphicPath>Things/Pawn/Humanlike/Heads/TabaxiHead/TabaxiHead</graphicPath>
-				<gender>None</gender>
-				<requiredGenes>
-					<li>Joe_TabaxiHead_Gene</li>
-				</requiredGenes>
-		</HeadTypeDef>
+<!--====================== Tabaxi HEADS ======================-->
 
-		<!-- Tabaxi Head Gene Def -->
-		<GeneDef ParentName="GeneJawBase">
-			<defName>Joe_TabaxiHead_Gene</defName>
-			<label>tabaxi head</label>
-			<description>Carriers of this gene have a head featuring tabaxi-like features. Their sharp senses and agility make them formidable hunters.</description>
-			<iconPath>UI/Icons/Genes/Joe_TabaxiHead_Gene</iconPath>		
-			<displayOrderInCategory>9802</displayOrderInCategory>
-			<biostatMet>2</biostatMet>	
-			<skinIsHairColor>false</skinIsHairColor>	
-			<forcedHeadTypes>
-	    		<li>Joe_TabaxiHead_Head</li>
-	    	</forcedHeadTypes>	
-			<hairTagFilter>
+	<!--====================== Bases ======================-->
+
+	<HeadTypeDef Name="TabaxiAverageFBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Female</gender>
+		<requiredGenes>
+			<li>Joe_TabaxiHead_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef Name="TabaxiAverageMBase" ParentName="AverageBase" Abstract="True">
+		<randomChosen>false</randomChosen>
+		<gender>Male</gender>
+		<requiredGenes>
+			<li>Joe_TabaxiHead_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<!--====================== Average Heads ======================-->
+
+	<HeadTypeDef ParentName="TabaxiAverageFBase">
+		<defName>Joe_TabaxiFemale_Head</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/TabaxiHead/Female/TabaxiHeadFemale</graphicPath>
+		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="TabaxiAverageMBase">
+		<defName>Joe_TabaxiMale_Head</defName>
+		<graphicPath>Things/Pawn/Humanlike/Heads/TabaxiHead/Male/TabaxiHeadMale</graphicPath>
+		<!--<eyeOffsetEastWest>(0.17, 0, 0.18)</eyeOffsetEastWest>-->		
+	</HeadTypeDef>
+
+	<!--====================== Tabaxi GENEDEFS ======================-->
+
+	<!-- Tabaxi Head Gene Def -->
+	<GeneDef ParentName="GeneJawBase">
+		<defName>Joe_TabaxiHead_Gene</defName>
+		<label>tabaxi head</label>
+		<description>Carriers of this gene have a head featuring tabaxi-like features. Their sharp senses and agility make them formidable hunters.</description>
+		<iconPath>UI/Icons/Genes/Joe_TabaxiHead_Gene</iconPath>	
+		<displayCategory>Cosmetic</displayCategory>
+		<displayOrderInCategory>98</displayOrderInCategory>
+		<biostatMet>2</biostatMet>	
+		<skinIsHairColor>false</skinIsHairColor>	
+		<!--<iconColor>(0.75, 0.75, 0.75)</iconColor>-->
+		<!--<minMelanin>2</minMelanin>-->
+		<forcedHeadTypes>
+			<li>Joe_TabaxiMale_Head</li>
+			<li>Joe_TabaxiFemale_Head</li>
+		</forcedHeadTypes>
+		<hairTagFilter>
 				<whitelist>true</whitelist>
 				<tags>
 					<li>Bald</li>
@@ -38,32 +68,13 @@
 					<li>NoBeard</li>
 				</tags>
 			</beardTagFilter>
-			<renderNodeProperties>
-				<li>
-					<texPath>Things/Pawn/Humanlike/Heads/TabaxiHead/TabaxiHead</texPath>
-					<colorType>Hair</colorType>	
-					<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
-					<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>				
-					<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
-					<useSkinShader>false</useSkinShader>
-					<useRottenColor>true</useRottenColor>
-					<shaderTypeDef>Cutout</shaderTypeDef>				
-					<parentTagDef>Head</parentTagDef>
-					<rotDrawMode>Fresh, Rotting</rotDrawMode>
-					<visibleFacing>
-						<li>East</li>
-						<li>South</li>
-						<li>West</li>
-						<li>North</li>
-					</visibleFacing>
-					<drawData>
-						<defaultData>
-							<layer>60</layer>
-						</defaultData>
-					</drawData>
-				</li>
-			</renderNodeProperties>			
-		</GeneDef>	
+		<statOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<PsychicSensitivity>-0.05</PsychicSensitivity>
+			<MentalBreakThreshold>0.02</MentalBreakThreshold>
+			<PainShockThreshold>0.03</PainShockThreshold>
+		</statOffsets>
+	</GeneDef>
 
 	<!-- Felyne Whiskers Gene -->
 	<GeneDef ParentName="Joe_TuskGeneBase">
