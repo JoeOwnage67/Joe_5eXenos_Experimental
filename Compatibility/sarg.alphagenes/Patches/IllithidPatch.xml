@@ -37,6 +37,15 @@
 						<li>Hair_BaldOnly</li>
 					</value>	
 				</li>			
+
+				<!-- make illithids big and ugly -->				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/XenotypeDef[defName="AG_MindDevourer"]/genes</xpath>				
+					<value>			
+						<li>Beauty_Ugly</li>
+						<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>	
+					</value>	
+				</li>		
 			</operations>
    		 </match>
 	</Operation>

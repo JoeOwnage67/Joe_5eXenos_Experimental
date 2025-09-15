@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CultureDef[defName="Orcish"]/styleItemTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/CultureDef[defName="Orcish"]</xpath>
+			<value>
+				<styleItemTags>
+					<li>
+						<tag>Tribal</tag>
+						<baseWeight>1</baseWeight>
+						<weightFactor>1</weightFactor>
+					</li>				
+					<li>
+						<tag>TattooBodyTribal</tag>
+						<baseWeight>0.4</baseWeight>
+						<weightFactor>1</weightFactor>
+					</li>
+				</styleItemTags>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/XenotypeDef[defName="Joe_Orc_Xeno"]/nameMaker</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Joe_Orc_Xeno"]</xpath>
+			<value>
+				<nameMaker>XDOrc_NamerPersonMale</nameMaker>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/XenotypeDef[defName="Joe_Orc_Xeno"]/nameMakerFemale</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/XenotypeDef[defName="Joe_Orc_Xeno"]</xpath>
+			<value>
+				<nameMakerFemale>XDOrc_NamerPersonFemale</nameMakerFemale>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>

@@ -1,53 +1,353 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- adding new xenos to existing factions -->
+<!-- Adding new xenos to existing factions -->
 <Patch>
-	
+
+  <!-- OutlanderFactionBase -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]</xpath>
+      <value>
+        <xenotypeSet>
+          <xenotypeChances>
+			<Baseliner>0.1</Baseliner>
+            <Joe_DarkElf_Xeno>0.05</Joe_DarkElf_Xeno>
+            <Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+            <Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+            <Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+            <Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+            <Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+            <Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+            <Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+            <Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+            <Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+            <Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+            <Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+          </xenotypeChances>
+        </xenotypeSet>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
+      <value>
+        <Joe_DarkElf_Xeno>0.05</Joe_DarkElf_Xeno>
+        <Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+        <Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+        <Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+        <Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+        <Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+        <Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+        <Joe_Tabaxi_Xeno>0.05
+		</Joe_Tabaxi_Xeno>
+        <Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+        <Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+        <Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+        <Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- TribeBase -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[@Name="TribeBase"]/xenotypeSet/xenotypeChances</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[@Name="TribeBase"]</xpath>
+      <value>
+        <xenotypeSet>
+          <xenotypeChances>
+			<Baseliner>0.1</Baseliner>
+            <Joe_DarkElf_Xeno>0.05</Joe_DarkElf_Xeno>
+            <Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+            <Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+            <Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+            <Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+            <Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+            <Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+            <Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+            <Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+            <Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+            <Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+            <Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+          </xenotypeChances>
+        </xenotypeSet>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[@Name="TribeBase"]/xenotypeSet/xenotypeChances</xpath>
+      <value>
+        <Joe_DarkElf_Xeno>0.05</Joe_DarkElf_Xeno>
+        <Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+        <Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+        <Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+        <Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+        <Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+        <Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+        <Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+        <Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+        <Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+        <Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+        <Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- AncientsBase -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[@Name="AncientsBase"]/xenotypeSet/xenotypeChances</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[@Name="AncientsBase"]</xpath>
+      <value>
+        <xenotypeSet>
+          <xenotypeChances>
+			<Baseliner>0.1</Baseliner>
+            <Joe_DarkElf_Xeno>0.05</Joe_DarkElf_Xeno>
+            <Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+            <Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+            <Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+            <Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+            <Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+            <Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+            <Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+            <Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+            <Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+            <Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+            <Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+          </xenotypeChances>
+        </xenotypeSet>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[@Name="AncientsBase"]/xenotypeSet/xenotypeChances</xpath>
+      <value>
+        <Joe_DarkElf_Xeno>0.05</Joe_DarkElf_Xeno>
+        <Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+        <Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+        <Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+        <Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+        <Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+        <Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+        <Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+        <Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+        <Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+        <Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+        <Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- PirateBandBase -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[@Name="PirateBandBase"]</xpath>
+      <value>
+        <xenotypeSet>
+          <xenotypeChances>
+			<Baseliner>0.1</Baseliner>
+            <Joe_DarkElf_Xeno>0.05</Joe_DarkElf_Xeno>
+            <Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+            <Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+            <Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+            <Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+            <Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+            <Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+            <Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+            <Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+            <Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+            <Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+            <Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+          </xenotypeChances>
+        </xenotypeSet>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+      <value>
+        <Joe_DarkElf_Xeno>0.05</Joe_DarkElf_Xeno>
+        <Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+        <Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+        <Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+        <Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+        <Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+        <Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+        <Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+        <Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+      </value>
+    </match>
+  </Operation>
+
+	<!--PirateWaster-->
 	<Operation Class="PatchOperationConditional">
-    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]</xpath>
-			<value>
-				<xenotypeSet>
-					<xenotypeChances>
-						<Joe_DarkElf_Xeno>0.1</Joe_DarkElf_Xeno>
-						<Joe_Dragonborn_Xeno>0.1</Joe_Dragonborn_Xeno>
-						<Joe_HillDwarf_Xeno>0.1</Joe_HillDwarf_Xeno>
-						<Joe_Loxodon_Xeno>0.1</Joe_Loxodon_Xeno>
-						<Joe_MountainDwarf_Xeno>0.1</Joe_MountainDwarf_Xeno>
-						<Joe_Orc_Xeno>0.1</Joe_Orc_Xeno>
-						<Joe_Shifter_Xeno>0.1</Joe_Shifter_Xeno>
-						<Joe_Tabaxi_Xeno>0.1</Joe_Tabaxi_Xeno>
-						<Joe_TorduneLoxo_Xeno>0.05</Joe_TorduneLoxo_Xeno>
-						<Joe_Undead_Xeno>0.1</Joe_Undead_Xeno>
-						<Joe_Warforged_Xeno>0.1</Joe_Warforged_Xeno>
-						<Joe_WoodElf_Xeno>0.1</Joe_WoodElf_Xeno>							
-					</xenotypeChances>
-				</xenotypeSet>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+		<xpath>Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances</xpath>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
-			<value>
-				<Joe_DarkElf_Xeno>0.1</Joe_DarkElf_Xeno>
-				<Joe_Dragonborn_Xeno>0.1</Joe_Dragonborn_Xeno>
-				<Joe_HillDwarf_Xeno>0.1</Joe_HillDwarf_Xeno>
-				<Joe_Loxodon_Xeno>0.1</Joe_Loxodon_Xeno>
-				<Joe_MountainDwarf_Xeno>0.1</Joe_MountainDwarf_Xeno>
-				<Joe_Orc_Xeno>0.1</Joe_Orc_Xeno>
-				<Joe_Shifter_Xeno>0.1</Joe_Shifter_Xeno>
-				<Joe_Tabaxi_Xeno>0.1</Joe_Tabaxi_Xeno>
-				<Joe_TorduneLoxo_Xeno>0.05</Joe_TorduneLoxo_Xeno>
-				<Joe_Undead_Xeno>0.1</Joe_Undead_Xeno>
-				<Joe_Warforged_Xeno>0.1</Joe_Warforged_Xeno>
-				<Joe_WoodElf_Xeno>0.1</Joe_WoodElf_Xeno>			
-			</value>
+		<xpath>Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<Joe_DarkElf_Xeno>0.05</Joe_DarkElf_Xeno>
+			<Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+			<Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>        
+			<Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+			<Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+			<Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>        
+			<Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>        
+		</value>
 		</match>
-	</Operation>
-		
+  	</Operation>
+
+	<!--Beggars-->
+	<Operation MayRequire="ludeon.rimworld.ideology" Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Beggars"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Beggars"]/xenotypeSet/xenotypeChances</xpath>
+		<value>		
+			<Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>			
+			<Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+			<Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+			<Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+			<Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>			
+		</value>
+		</match>
+  	</Operation>
+
+	<!-- TribeCannibal -->
+  	<Operation MayRequire="ludeon.rimworld.ideology" Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
+		<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="TribeCannibal"]</xpath>
+		<value>
+			<xenotypeSet>
+				<xenotypeChances>
+					<Baseliner>0.1</Baseliner>			
+					<Joe_Orc_Xeno>0.05</Joe_Orc_Xeno>
+					<Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>				
+					<Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+		</nomatch>		
+  	</Operation>
+
+	<!--CannibalPirate-->
+	<Operation MayRequire="ludeon.rimworld.ideology" Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="CannibalPirate"]/xenotypeSet/xenotypeChances</xpath>
+		<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="CannibalPirate"]</xpath>
+		<value>
+			<xenotypeSet>
+				<xenotypeChances>
+					<Baseliner>0.1</Baseliner>			
+					<Joe_Orc_Xeno>0.001</Joe_Orc_Xeno>
+					<Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>				
+					<Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+		</nomatch>		
+  	</Operation>
+
+	<!-- Pilgrims -->
+	   <Operation MayRequire="ludeon.rimworld.ideology" Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[defName="Pilgrims"]/xenotypeSet/xenotypeChances</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[defName="Pilgrims"]</xpath>
+      <value>
+        <xenotypeSet>
+          <xenotypeChances>
+			<Baseliner>0.1</Baseliner>
+            <Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+			<Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+			<Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+			<Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+			<Joe_Orc_Xeno>0.005</Joe_Orc_Xeno>
+			<Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+			<Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+			<Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+			<Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+			<Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+          </xenotypeChances>
+        </xenotypeSet>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[defName="Pilgrims"]/xenotypeSet/xenotypeChances</xpath>
+      <value>
+        <Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+        <Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+        <Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+        <Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+        <Joe_Orc_Xeno>0.005</Joe_Orc_Xeno>
+        <Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+        <Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+        <Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+        <Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+        <Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+      </value>
+    </match>
+  </Operation>
+
+  	<!-- Empire -->
+	<Operation MayRequire="ludeon.rimworld.royalty" Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+		<value>		
+			<Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+			<Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+			<Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+			<Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+		</value>
+		</match>
+  	</Operation>
+
+	<!-- OutlanderRefugee -->
+	 <Operation MayRequire="ludeon.rimworld.royalty" Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="OutlanderRefugee"]/xenotypeSet/xenotypeChances</xpath>
+		<value>		
+			<Joe_Dragonborn_Xeno>0.05</Joe_Dragonborn_Xeno>
+			<Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>
+			<Joe_Loxodon_Xeno>0.05</Joe_Loxodon_Xeno>
+			<Joe_MountainDwarf_Xeno>0.05</Joe_MountainDwarf_Xeno>
+			<Joe_Orc_Xeno>0.005</Joe_Orc_Xeno>
+			<Joe_Shifter_Xeno>0.05</Joe_Shifter_Xeno>
+			<Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>
+			<Joe_TorduneLoxo_Xeno>0.01</Joe_TorduneLoxo_Xeno>
+			<Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+			<Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+		</value>
+		</match>
+  	</Operation>
+
+	<!-- TradersGuild -->
+	  <Operation MayRequire="ludeon.rimworld.odyssey" Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[@Name="TradersGuild"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="TradersGuild"]/xenotypeSet/xenotypeChances</xpath>
+		<value>					
+			<Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>					
+			<Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>			
+			<Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+			<Joe_WoodElf_Xeno>0.05</Joe_WoodElf_Xeno>
+		</value>
+		</match>
+  	</Operation>
+
+	<!-- Salvagers -->
+	   <Operation MayRequire="ludeon.rimworld.odyssey" Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Salvagers"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Salvagers"]/xenotypeSet/xenotypeChances</xpath>
+		<value>					
+			<Joe_HillDwarf_Xeno>0.05</Joe_HillDwarf_Xeno>					
+			<Joe_Tabaxi_Xeno>0.05</Joe_Tabaxi_Xeno>			
+			<Joe_Warforged_Xeno>0.01</Joe_Warforged_Xeno>
+			<Joe_DarkElf_Xeno>0.05</Joe_DarkElf_Xeno>
+			<Joe_Undead_Xeno>0.05</Joe_Undead_Xeno>
+		</value>
+		</match>
+  	</Operation>
+
+
 
 </Patch>

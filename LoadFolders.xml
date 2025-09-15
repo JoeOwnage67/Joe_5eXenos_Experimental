@@ -12,5 +12,6 @@
 		<li IfModActive="nals.facialanimation">Compatibility/nals.facialanimation</li>
 		<li IfModActive="joeownage.facecustomizerfa">Compatibility/joeownage.facecustomizerfa</li>
 		<li IfModActive="neronix17.hd.pawns">Compatibility/neronix17.hd.pawns</li>
+		<li IfModActive="xd.orcnames">Compatibility/xd.orcnames</li>
 	</v1.6>
 </loadFolders>

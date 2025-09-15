@@ -1,31 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- adding new xenos to existing factions -->
 <Patch>
-	
+
+<!-- adding illithid to existing factions -->
+
+	<!-- PirateBandBase -->
 	<Operation Class="PatchOperationConditional">
-    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
-		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]</xpath>
-			<value>
-				<xenotypeSet>
-					<xenotypeChances>
-						<AG_MindDevourer>0.1</AG_MindDevourer>					
-					</xenotypeChances>
-				</xenotypeSet>
-			</value>
-		</nomatch>
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-    <xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+		<xpath>Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>    
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/FactionDef[@Name="OutlanderFactionBase" or @Name="TribeBase" or @Name="AncientsBase" or @Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
-			<value>
-				<AG_MindDevourer>0.1</AG_MindDevourer>
-			</value>
+		<xpath>Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<AG_MindDevourer>0.05</AG_MindDevourer>
+		</value>
 		</match>
 	</Operation>
-		
+
+	<!--PirateWaster-->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="PirateWaster"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+        	<AG_MindDevourer>0.05</AG_MindDevourer>
+     	</value>
+		</match>
+  	</Operation>
+
+	<!-- TribeCannibal -->
+  	<Operation MayRequire="ludeon.rimworld.ideology" Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="TribeCannibal"]</xpath>
+			<value>
+				<AG_MindDevourer>0.05</AG_MindDevourer>
+			</value>
+		</match>		
+  	</Operation>
+
+	<!--CannibalPirate-->
+	<Operation MayRequire="ludeon.rimworld.ideology" Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="CannibalPirate"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="TribeCannibal"]</xpath>
+			<value>
+				<AG_MindDevourer>0.05</AG_MindDevourer>
+			</value>
+		</match>		
+  	</Operation>
 
 </Patch>

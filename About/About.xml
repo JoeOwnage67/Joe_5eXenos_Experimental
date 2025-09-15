@@ -26,6 +26,7 @@
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li> <!-- Vanilla Expanded Framework -->
 		<li>nals.facialanimation</li> <!-- Facial Animation -->
 		<li>neronix17.hd.pawns</li> <!-- HD Pawns -->
+		<li>xd.orcnames</li> <!-- Orc Names -->
 	</loadAfter>
 
 	<modDependencies>
@@ -49,12 +50,6 @@
 			<packageId>RedMattis.BigSmall.Core</packageId>
 			<displayName>Big and Small - Genes &amp; More</displayName>
 		</li>
-		
-		
-		<!--<li>
-			<packageId>JoeOwnage.FaceCustomizerFA</packageId>
-			<displayName>Face Customizer for [NL] Facial Animation</displayName>
-		</li>-->
 
 	</modDependencies>
 	<description>5e Xenos is a collection of Rimworld Xenotypes based on Dungeons and Dragons Fifth Edition.</description>
