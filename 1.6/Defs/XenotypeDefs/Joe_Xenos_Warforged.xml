@@ -24,13 +24,13 @@
 
 	<HeadTypeDef ParentName="WarforgedAverageFBase">
 		<defName>Joe_WarforgedFemale_Head</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/WarforgedHead/Female/WarforgedHead</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/WarforgedHead/Female/WarforgedHead_Female</graphicPath>
 		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="WarforgedAverageMBase">
 		<defName>Joe_WarforgedMale_Head</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/WarforgedHead/Male/WarforgedHead</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/WarforgedHead/Male/WarforgedHead_Male</graphicPath>
 		<!--<eyeOffsetEastWest>(0.17, 0, 0.18)</eyeOffsetEastWest>-->		
 	</HeadTypeDef>
 
