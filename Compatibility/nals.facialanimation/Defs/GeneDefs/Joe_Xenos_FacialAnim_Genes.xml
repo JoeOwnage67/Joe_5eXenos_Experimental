@@ -31,6 +31,7 @@
 		<modExtensions>
 			<li Class="BigAndSmall.PawnExtension">
 				<facialDisabler>
+					<headName>retain</headName>
 					<browName>retain</browName>
 					<mouthName>retain</mouthName>
 				</facialDisabler>
