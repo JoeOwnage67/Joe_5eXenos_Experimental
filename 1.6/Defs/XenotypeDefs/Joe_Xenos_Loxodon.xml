@@ -69,6 +69,11 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<MiningSpeed>0.1</MiningSpeed>
 		</statOffsets>
+		<modExtensions>
+      		<li Class="BigAndSmall.PawnExtension">
+        		<forceGender>Male</forceGender>
+      		</li>
+    	</modExtensions>
 	</GeneDef>
 	
 	<!-- Loxodon No Tusks Gene -->
@@ -81,7 +86,12 @@
 		<selectionWeight>0</selectionWeight>
 		<prerequisite>
     		<li>Joe_LoxoHead_Gene</li>
-  		</prerequisite> 		
+  		</prerequisite>
+		<modExtensions>
+      		<li Class="BigAndSmall.PawnExtension">
+        		<forceGender>Female</forceGender>
+      		</li>
+    	</modExtensions> 		
 	</GeneDef>	
 
 

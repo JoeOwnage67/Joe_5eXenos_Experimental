@@ -24,51 +24,51 @@
 
 	<!--====================== Average Heads ======================-->
 
-	<HeadTypeDef ParentName="TabaxiAverageFBase">
+	<HeadTypeDef ParentName="UndeadAverageFBase">
 		<defName>Joe_UndeadFemale_Head1</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Female/Average_Normal</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Female/UndeadHead_Female1</graphicPath>
 		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 
-    <HeadTypeDef ParentName="TabaxiAverageFBase">
+    <HeadTypeDef ParentName="UndeadAverageFBase">
 		<defName>Joe_UndeadFemale_Head2</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Female/Average_Wa</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Female/UndeadHead_Female2</graphicPath>
 		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 
-    <HeadTypeDef ParentName="TabaxiAverageFBase">
+    <HeadTypeDef ParentName="UndeadAverageFBase">
 		<defName>Joe_UndeadFemale_Head3</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Female/Average_Normal</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/UndeadHead/Female/UndeadHead_Female3</graphicPath>
 		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 
-    <HeadTypeDef ParentName="TabaxiAverageFBase">
+    <HeadTypeDef ParentName="UndeadAverageFBase">
 		<defName>Joe_UndeadFemale_Head4</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Female/Average_Wa</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/UndeadHead/Female/UndeadHead_Female4</graphicPath>
 		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 
-	<HeadTypeDef ParentName="ShifterAverageMBase">
+	<HeadTypeDef ParentName="UndeadAverageMBase">
 		<defName>Joe_UndeadMale_Head1</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Male/Average_Normal</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/UndeadHead/Male/UndeadHead_Male1</graphicPath>
 		<!--<eyeOffsetEastWest>(0.17, 0, 0.18)</eyeOffsetEastWest>-->		
 	</HeadTypeDef>
     
-    <HeadTypeDef ParentName="TabaxiAverageMBase">
+    <HeadTypeDef ParentName="UndeadAverageMBase">
 		<defName>Joe_UndeadMale_Head2</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/SkeletonHead/Male/Average_Wa</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/UndeadHead/Male/UndeadHead_Male2</graphicPath>
 		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 
-    <HeadTypeDef ParentName="TabaxiAverageMBase">
+    <HeadTypeDef ParentName="UndeadAverageMBase">
 		<defName>Joe_UndeadMale_Head3</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Male/Average_Normal</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/UndeadHead/Male/UndeadHead_Male3</graphicPath>
 		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 
-    <HeadTypeDef ParentName="TabaxiAverageMBase">
+    <HeadTypeDef ParentName="UndeadAverageMBase">
 		<defName>Joe_UndeadMale_Head4</defName>
-		<graphicPath>Things/Pawn/Humanlike/Heads/ZombieHead/Male/Average_Wa</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/UndeadHead/Male/UndeadHead_Male4</graphicPath>
 		<!--<eyeOffsetEastWest>(0.11, 0, 0.19)</eyeOffsetEastWest>-->
 	</HeadTypeDef>
 

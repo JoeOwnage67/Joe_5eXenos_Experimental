@@ -13,5 +13,6 @@
 		<li IfModActive="joeownage.facecustomizerfa">Compatibility/joeownage.facecustomizerfa</li>
 		<li IfModActive="neronix17.hd.pawns">Compatibility/neronix17.hd.pawns</li>
 		<li IfModActive="xd.orcnames">Compatibility/xd.orcnames</li>
+		<li IfModActive="det.stoneborn">Compatibility/det.stoneborn</li>		
 	</v1.6>
 </loadFolders>

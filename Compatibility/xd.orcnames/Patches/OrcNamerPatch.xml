@@ -3,9 +3,9 @@
 <Patch>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/CultureDef[defName="Orcish"]/styleItemTags</xpath>
+		<xpath>Defs/CultureDef[defName="Orc"]/styleItemTags</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/CultureDef[defName="Orcish"]</xpath>
+			<xpath>Defs/CultureDef[defName="Orc"]</xpath>
 			<value>
 				<styleItemTags>
 					<li>
