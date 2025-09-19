@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="Joe_5eXenos.PatchOperation_ToggleSettings">
+		<settings>
+			<li>alphagenesfactiondisable</li>
+		</settings>
+		<active Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/FactionDef[defName="AG_OutlanderCivilUnion"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/FactionDef[defName="AG_XenohumanPirates"]</xpath>
+				</li>
+
+			</operations>
+		</active>
+	</Operation>
+
+</Patch>

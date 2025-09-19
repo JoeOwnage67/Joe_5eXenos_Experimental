@@ -50,5 +50,6 @@
 		</li>
 
 	</modDependencies>
+	<!-- Joe_DarkElf_Xeno, Joe_Dragonborn_Xeno, Joe_HillDwarf_Xeno, Joe_Loxodon_Xeno, Joe_MountainDwarf_Xeno, Joe_Orc_Xeno, Joe_Shifter_Xeno, Joe_Tabaxi_Xeno, Joe_TorduneLoxo_Xeno, Joe_Undead_Xeno, Joe_Warforged_Xeno, Joe_WoodElf_Xeno-->
 	<description>5e Xenos is a collection of Rimworld Xenotypes based on Dungeons and Dragons Fifth Edition.</description>
 </ModMetaData>

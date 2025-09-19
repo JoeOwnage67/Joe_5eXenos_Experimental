@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-    
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[NL] Facial Animation - WIP</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
 
-    <!-- Joe_FA_NoBrows gene added to HillDwarf in favour of Det's Stoneborn Brows -->    
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/XenotypeDef[defName="Joe_HillDwarf_Xeno"]/genes</xpath>
-        <value>
-            <li>Joe_FA_NoBrows</li>
-        </value>                                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/XenotypeDef[defName="Joe_HillDwarf_Xeno"]/genes</xpath>
+                    <value>
+                        <li>Joe_FA_NoBrows</li>
+                    </value>                                
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/XenotypeDef[defName="Joe_MountainDwarf_Xeno"]/genes</xpath>
+                    <value>
+                        <li>Joe_FA_NoBrows</li>
+                    </value>                                
+                </li>
+
+            </operations>
+        </match>
     </Operation>
-
-    <!-- Joe_FA_NoBrows gene added to MountainDwarf in favour of Det's Stoneborn Brows -->    
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/XenotypeDef[defName="Joe_MountainDwarf_Xeno"]/genes</xpath>
-        <value>
-            <li>Joe_FA_NoBrows</li>
-        </value>                                
-    </Operation>
-
-    
-
 </Patch>
